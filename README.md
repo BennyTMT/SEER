@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./seer.png" alt="Seer Diagram" width="600">
+</p>
+
 ### **SEER: Self-Evolving Event Retrieval Agent and Environment for Forecasting**
 SEER is a closed-loop, self-improving pipeline designed for quantitative market price forecasting. It continuously refines both its local data sourcing (Environment) and its signal filtering (Retrieval) based on historical prediction outcomes as reward.
 
