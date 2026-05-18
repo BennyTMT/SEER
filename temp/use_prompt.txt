@@ -1,0 +1,22 @@
+我现在要搭建一个agent，来retrieval 辅助预测这些股票的事件（从N条事件中）
+
+现在对这5个类别的stock分别写一个简洁的English介绍，放在下面的格式中的DOMAIN位置。并介绍这个Memory文件的功能,放在TARGET中：通过历史的价格预测，和事件对预测的影响，学习领域知识，从而知道哪些信息对这个领域的预测重要
+
+（最后以markdown格式返回这五个domain的 memory 文件）
+
+
+
+══════════════════════════════════════════════
+MEMORY (Retrieval useful events for stock price forecasting) [0% — -0/2,200 chars]
+══════════════════════════════════════════════
+DOMAIN: [Complete introduction here.]
+══════════════════════════════════════════════
+TARGET:[Complete target here.]
+══════════════════════════════════════════════
+
+§
+
+
+
+
+

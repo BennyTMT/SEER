@@ -1,0 +1,33 @@
+{
+    "SECTOR": "[Healthcare & Pharmaceuticals]\nThis sector includes leading pharmaceutical developers, biotechnology firms, and managed healthcare providers (e.g., JNJ, PFE, LLY, UNH). Critical events for this sector involve clinical trial results, FDA approvals or rejections, drug pipeline developments, patent expirations, and shifts in healthcare legislation.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Uncertainty resolution (judicial/regulatory finality) is the primary price catalyst, as markets favor \"defined constraints\" over \"looming ambiguity.\"",
+        "Regulatory \"desensitization\" occurs when negative news saturates, creating a valuation floor once the market shifts from pricing \"fear\" to \"known costs.\"",
+        "Proactive, board-level remediation plans neutralize negative investigative reports by converting \"future risk\" into \"historical data.\"",
+        "Legislative/regulatory inquiries follow a risk hierarchy: general letters are noise, but formal executive summons override analyst ratings and drive idiosyncratic sell-offs.",
+        "Strategic concessions (e.g., rebates) are bullish if preemptive (pre-hearing), but bearish if reactive (during-hearing), as the latter signals structural weakness.",
+        "Institutional \"weak hand\" capitulation is a more reliable bottoming signal than value-investor accumulation, especially during high-volume washout events.",
+        "Post-saturation, only governance changes (e.g., board turnover) or structural remediation plans trigger contrarian reversals.",
+        "Managed care stocks are uniquely sensitive to payroll contraction and \"middleman\" (PBM) scrutiny, which overrides broader sector tailwinds.",
+        "Pre-earnings windows (30 days) cause stocks to decouple from regulatory noise as markets transition to valuation-arbitrage.",
+        "Holiday volume amplification increases share price sensitivity to negative reporting by 2-3x due to the absence of institutional \"anchor\" buyers.",
+        "Industry-wide tailwinds (e.g., ACA extensions) act as a buffer against company-specific regulatory attacks, creating a \"net-neutral\" environment.",
+        "A \"first-time\" revenue contraction acts as a valuation-reset catalyst that overrides previous regulatory \"clearing events\" by forcing a total recalibration of growth models."
+    ],
+    "MISSING": [
+        "Regulatory Lifecycle Index: Tracks the transition of political risks from \"inquiry\" to \"priced-in\" to identify certainty-based inflection points.",
+        "Institutional Stability Metric: Models the net flow between anchor holders and transient liquidity to determine price-floor resilience during sector-wide volatility.",
+        "Governance & Remediation Efficacy: Quantifies market \"forgiveness latency\" by measuring price responses to management’s testimony and concessions.",
+        "Materiality-Impact Modeling: Differentiates noise from systemic threats by calculating the dollar-denominated EPS impact of proposed legislative or regulatory concessions.",
+        "Headline-Fatigue & Elasticity Threshold: Measures the decay of price sensitivity to recurring negative themes to identify when news becomes a \"clearing event.\"",
+        "Policy-Certainty Valuation Premium: Tracks the P/E expansion potential as firms shift from \"regulatory-threat\" to \"compliant-standard\" status.",
+        "Strategic Capitulation Modeling: Assesses whether corporate concessions result in a net-positive relief rally or trigger contagion risk across business segments.",
+        "Sector-Specific Alpha Correlation: Isolates idiosyncratic regulatory alpha from broad-market defensive rotations driven by macro-economic triggers.",
+        "Revenue-Contraction Sensitivity Index: Measures the deviation of forward guidance from historical revenue growth cycles to flag \"structural reset\" risks.",
+        "Institutional \"Anchor-Holder\" Attrition Rate: Tracks the movement of long-term institutional capital specifically following a company's first multi-decade growth-contraction announcement.",
+        "Concession-to-Fundamental Correlation: A framework to assess whether a corporate concession (e.g., rebate) is viewed as \"proactive\" or \"defensive\" based on the concurrent state of the company's balance sheet and forward guidance."
+    ],
+    "MEMORY_CAP": 0.148,
+    "MISSING_CAP": 0.225625
+}

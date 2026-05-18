@@ -1,0 +1,31 @@
+{
+    "SECTOR": "[Healthcare & Pharmaceuticals]\nThis sector includes leading pharmaceutical developers, biotechnology firms, and managed healthcare providers (e.g., JNJ, PFE, LLY, UNH). Critical events for this sector involve clinical trial results, FDA approvals or rejections, drug pipeline developments, patent expirations, and shifts in healthcare legislation.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Institutional divestment >40% confirms structural loss of conviction, whereas quarter-end selling often reflects tax-loss harvesting, signaling a potential \"January Effect\" bounce.",
+        "Managed care valuations depend on MCR stability; margin erosion overrides positive M&A or regulatory news.",
+        "Biotech valuations are inversely correlated to interest rates, while large-cap pharma functions as a defensive macro hedge.",
+        "Regulatory inquiries exhibit diminishing returns unless they introduce new, quantified financial liabilities or conclusive reports of systemic misconduct.",
+        "Negative regulatory or investigative reports (e.g., formal findings of wrongdoing) supersede positive financial guidance and analyst price targets, triggering liquidation.",
+        "Congressional testimony regarding systemic misconduct or \"monopoly\" rhetoric acts as an existential risk catalyst, rendering standard technical support levels and \"Buy\" ratings ineffective.",
+        "Regulatory audits are secondary to quantitative financial liabilities; operational remediation only signals a bottom if it precedes the quantification of these liabilities.",
+        "Headline Saturation Pivot: In highly regulated sectors, extreme negative news volume often reaches a point of diminishing returns where the \"regulatory risk premium\" is fully baked into the price. Once the company initiates a proactive, quantifiable concession (e.g., profit rebates), the stock often experiences a \"relief rally\" as the market shifts from pricing in \"unknown existential risk\" to \"known operational constraints.\"",
+        "Pre-emptive Concession Effect: Defensive measures taken by management (such as voluntary profit rebates or pilot program acceleration) immediately preceding a high-profile Congressional hearing serve as a \"bottoming\" signal, as they reduce the political incentive for further punitive legislative action.",
+        "Political Insider Signaling: In highly regulated sectors, the liquidation of equity stakes by politically active individuals (representatives/insiders) serves as a potent sentiment-breaker, signaling to the market that the regulatory \"floor\" has not yet been reached, regardless of management's remedial actions.",
+        "Concession Timing Lag: Management concessions (e.g., profit rebates) are often viewed by the market as an admission of guilt or a sign of weakness in the short term, causing immediate downward price pressure before they are eventually recognized as \"bottoming\" signals.",
+        "Capitulation Overshoot Pattern: In high-cap, systemically important stocks, a single-session decline exceeding 15-20% following a \"kitchen sink\" news cycle (simultaneous regulatory, financial, and political bad news) is frequently a liquidity-driven overshoot rather than a fundamental repricing, leading to an immediate mean-reversion \"relief rally.\"",
+        "\"Clearing the Decks\" Effect: When management issues guidance that marks the first contraction in decades, the market may interpret this as the definitive \"bottom\" of the negativity cycle, as it removes uncertainty regarding future earnings revisions.",
+        "Regulatory-Revenue Synergy Risk: In managed care, a simultaneous release of negative CMS reimbursement rates and poor company-specific revenue guidance creates a \"compounding negative\" effect that permanently shifts the valuation baseline, rendering traditional analyst price targets obsolete in the immediate aftermath.",
+        "Political \"Sell-Signal\" Amplification: When legislative committee members (e.g., Rep. Kevin Hern) execute divestments during high-profile committee investigations into the target company, it acts as a \"confidence multiplier\" for the bearish case, effectively neutralizing any \"bottoming\" narrative proposed by corporate management or sell-side analysts."
+    ],
+    "MISSING": [
+        "Political-Regulatory Alignment: Tracks committee insider activity, legislative testimony sentiment, and policy trends to forecast regulatory punitive vs. collaborative outcomes.",
+        "Credibility & Narrative Integrity Index: Measures divergence between management guidance, media scrutiny, and \"proactive concessions\" to identify genuine de-risking versus structural credibility decay.",
+        "Liquidity & Valuation Floor Analytics: Identifies institutional \"bottoming\" by correlating forced selling volume with the point where regulatory risk premiums exceed long-term DCF valuations.",
+        "Institutional Conviction & Flow Tracking: Monitors derivative positioning and holding duration to distinguish between passive rebalancing and fundamental institutional accumulation.",
+        "Regulatory-Revenue Sensitivity Model: Quantifies sector-wide exposure to government reimbursement shifts (e.g., CMS) to forecast downward revenue revisions before formal guidance.",
+        "Systemic Exhaustion Index: Tracks the concurrency of negative news density and volatility spikes to identify \"clearing the decks\" events that precede trend reversals."
+    ],
+    "MEMORY_CAP": 0.7366,
+    "MISSING_CAP": 0.31285714285714283
+}

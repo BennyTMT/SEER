@@ -1,0 +1,36 @@
+{
+    "SECTOR": "[Semiconductors & AI Hardware]\nThis sector represents the core hardware layer of the global tech ecosystem, including chip design, foundry manufacturing, and AI infrastructure (e.g., NVDA, AMD, INTC, TSM, AVGO, QCOM). Stock movements are highly sensitive to computing demand, geopolitical supply chain shifts, semiconductor cycles, and capital expenditure (CapEx) from major tech firms.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro-regime (CPI/FOMC) and sectoral rotation mandates override all idiosyncratic fundamentals and product-launch catalysts.",
+        "Institutional liquidity traps and \"forced selling\" occur during low-volume periods or macro-rebalancing, rendering positive news ineffective for price appreciation.",
+        "Geopolitical friction and tariff threats trigger \"liquidity freezes\" that only resolve once the specific financial impact is quantifiable; tariff cancellations act as superior reversal catalysts.",
+        "Peer contagion (margin warnings/downgrades) triggers non-linear sell-offs, though rapid-fire negative analyst sentiment often marks a technical bottom via capitulation.",
+        "Market \"front-running\" of analyst downgrades often results in neutral or corrective bounces on the actual day of negative news due to prior price exhaustion.",
+        "Integrated, multi-segment firms provide superior valuation floors during volatility compared to pure-play chipmakers.",
+        "Post-event momentum (CES/Launches) creates 48-72 hour alpha windows, provided the macro environment is not in an active state of sector-wide rotation.",
+        "High-beta semiconductor stocks exhibit a \"Quiet Period\" buffer after 10%+ drawdowns where the absence of new guidance allows macro-tailwinds to drive technical recovery.",
+        "Systemic Supply-Chain Contagion: When a major sector peer (e.g., Intel/Foundry) issues warnings regarding \"manufacturing constraints\" or \"supply shortages,\" the entire \"Client/Edge\" segment experiences high-beta selling pressure that ignores idiosyncratic positive news (product launches or tariff relief).",
+        "Divergence of Macro vs. Sectoral Fundamentals: During periods of sector-wide fundamental stress, macro-relief (tariff cancellations) provides only a temporary \"noise\" floor and fails to trigger a sustained reversal until the sector-wide supply-chain narrative stabilizes.",
+        "Capitulation Thresholds: In high-beta semiconductor stocks, a cluster of negative analyst revisions occurring after a prolonged 15%+ drawdown often serves as a technical floor rather than a continuation signal, indicating that the 'weak hands' have been purged.",
+        "Sentiment Saturation: When macroeconomic data (Consumer Confidence) and sector-specific downgrades (Zacks/UBS/Mizuho) align on a single day, the market often exhibits 'event-risk paralysis,' leading to price stabilization rather than further breakdown.",
+        "The \"Exhaustion Floor\" Effect: When negative news density (downgrades + poor macro data + peer warnings) reaches a critical saturation point within a 72-hour window, the market tends to stabilize (Neutral) rather than break down further, as the \"sell-the-news\" dynamic is replaced by \"event-risk paralysis.\"",
+        "Divergent Peer Responses: When major peers report earnings simultaneously (e.g., MSFT vs. META), the semiconductor sector reflects a tug-of-war between AI-infrastructure optimism (META CapEx) and broader software-driven valuation concerns (MSFT), which often masks idiosyncratic potential and leads to range-bound price action."
+    ],
+    "MISSING": [
+        "Geopolitical Exposure & Policy Elasticity: Real-time risk-mapping of tariff impacts and retaliation probabilities on sector revenue.",
+        "Capital Flow & Sentiment Narrative Integrity: Tracking institutional rotation and the delta between market sentiment and fundamental accumulation.",
+        "Cross-Vertical Contagion & Correlation Decay: Measuring volatility spillover between peers and the breakdown of index correlation during idiosyncratic product cycles.",
+        "Earnings-Cycle Volatility & Analyst Revision Latency: Quantifying quiet-period vulnerability and the lag between analyst revisions and real-time price action.",
+        "Structural Valuation Resilience: A framework assessing firm-specific risk-off thresholds during systemic market capitulation events.",
+        "Technical Exhaustion Indicators: Quantifiable metrics (e.g., RSI distance from mean, distance from 200-day SMA) to identify when 'negative news flow' transition from a catalyst for selling to a signal for exhaustion.",
+        "Institutional Order Flow Asymmetry: Real-time data on whether institutional selling is active or if the volume is largely retail panic during 'news-heavy' days.",
+        "Event-Clustering Volatility Index: A metric to measure the 'density' of negative news; high density of negative events in a single 24-hour window often triggers a volatility-dampening effect (the 'noise-cancellation' bias).",
+        "Event-Density Saturation Metric: A quantifiable threshold for the number of negative news items per 48-hour window that historically triggers volatility dampening or price stabilization.",
+        "Post-Downgrade Price-to-Sentiment Gap: A metric tracking the delta between how much a stock drops *before* an analyst downgrade versus *after* the downgrade, to identify when the downgrade is \"old news.\"",
+        "Sector-Specific \"Wait-and-See\" Volume Proxy: A measurement of trading volume compression during earnings-heavy periods that serves as a leading indicator for neutral price action.",
+        "AI-Capex vs. Client-Demand Sentiment Index: A comparative metric tracking the divergence between AI-data-center-related news (bullish) and mobile/PC-handset-related news (bearish), which currently drives the primary split in semiconductor valuation."
+    ],
+    "MEMORY_CAP": 0.5936,
+    "MISSING_CAP": 0.6142857142857143
+}

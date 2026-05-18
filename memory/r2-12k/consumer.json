@@ -1,0 +1,39 @@
+{
+    "SECTOR": "[Consumer Staples & Big-Box Retail]\nThis sector features essential goods manufacturers, beverage giants, and large-scale retail chains (e.g., WMT, COST, KO, PEP, PG). Known for their defensive market characteristics, these stocks are primarily driven by inflation rates, consumer purchasing power, commodity pricing, and supply chain efficiency.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Yield-Floor: Dividend stability and high yield create a \"hard floor\" that overrides negative macro data, analyst downgrades, and inflationary headwinds.",
+        "Maximum Pain Reversal: Analyst downgrades or negative guidance at 52-week lows act as contrarian signals, triggering mean-reversion as institutional shorts exhaust their mandates.",
+        "Liquidity Stagnation: During low-volume periods (e.g., late December), even positive news is neutralized, leading to narrow price oscillation regardless of fundamental catalysts.",
+        "Beta-Lag & Rotation: Staples underperform during \"risk-on\" rallies but serve as a defensive rotation destination during high-beta sell-offs or weak NFP/macro data.",
+        "Fundamental Validation: Retailer earnings and trade-down data act as the primary sector floor; positive results override idiosyncratic headwinds and drive institutional re-accumulation.",
+        "Operational Certainty: Removal of supply-chain/tariff uncertainty is a stronger price catalyst than earnings beats, while SKU/leadership transitions force neutral holding patterns.",
+        "Technical Anchor Resilience: When trading near long-term support, low short interest facilitates rapid rebounds, as lack of bear conviction allows longs to initiate accumulation.",
+        "Dividend-Ex-Date Absorption: Mechanical price drops on ex-dividend dates are frequently negated by institutional \"yield-seeking\" buying if the stock is near 52-week support.",
+        "Sentiment Decoupling: In extreme volatility, staples become \"sentiment-decoupled\" from S&P 500 beta, trending instead on relative yield-spreads and defensive institutional mandates.",
+        "Dow-Component Contagion: As mega-cap staples often anchor the Dow Jones, idiosyncratic crashes in other index heavyweights (e.g., UNH) create artificial, non-fundamental selling pressure on staples via index-linked ETFs and algorithmic rebalancing.",
+        "Analyst Narrative vs. Target Price: In mature, dividend-heavy sectors, a downgrade in \"rating\" (e.g., Buy to Hold) often carries higher predictive weight for near-term price decline than the concurrent adjustment of a price target, as the former signals a shift in institutional conviction.",
+        "Defensive Rotation Dominance: During high-beta tech dislocations (e.g., -10% moves in mega-cap tech), capital rotation into defensive staples creates a \"rotation bid\" that renders analyst downgrades and macro-sentiment data temporarily irrelevant.",
+        "Institutional Yield-Absorption: In periods of broad market volatility, institutional inflows seeking \"safe-haven\" status often target large-cap staples regardless of idiosyncratic analyst downgrades, effectively creating a \"buy-the-downgrade\" phenomenon."
+    ],
+    "MISSING": [
+        "Institutional Yield-Floor: Tracks the delta between sector dividend yields and 10-year Treasury rates to identify institutional \"bond-proxy\" entry points.",
+        "Operational Volume Index: Contrasts unit-volume growth against inflationary revenue gains to isolate organic demand from price-driven growth.",
+        "Consumer Trade-Down Metric: Measures the volume spread between premium and discount segments to quantify real-time shifts in purchasing power.",
+        "Macro-Regime Sensitivity: Maps sector price action against CPI/NFP thresholds to distinguish between defensive \"safe haven\" inflows and broader panic selling.",
+        "Institutional Rotation Velocity: Quantifies the speed of capital shifts between staples and growth indices during regime changes.",
+        "Supply-Chain Tariff Exposure: Calculates COGS sensitivity to geopolitical trade volatility to predict the magnitude of relief rallies upon de-escalation.",
+        "Sentiment-to-Price Divergence: Analyzes the delta between analyst consensus and technical support to identify contrarian bullish exhaustion.",
+        "Capitulation-Exhaustion Ratio: Measures sell-side volume relative to 30-day ADV to identify the threshold where structural selling pressure is depleted.",
+        "Peer-Correlation Lead-Lag: Models the time-delay between bellwether earnings and sector-wide price responses to optimize entry windows.",
+        "Institutional Rebalancing Tracker: Differentiates between fundamental sentiment shifts and forced, calendar-based window dressing.",
+        "Index-Linked Flow Volatility: Metrics tracking how much of a stock's daily volume is derived from passive index rebalancing vs. active fundamental trading.",
+        "Relative Beta-Sensitivity to Index Peers: A real-time correlation coefficient between the target stock and the most volatile members of its primary index (e.g., Dow Jones) to predict \"contagion\" sell-offs.",
+        "Pricing Power Elasticity: A signal tracking the specific delta between reported revenue growth driven by volume vs. that driven by price hikes, specifically when consumer confidence is declining.",
+        "Rotation Velocity Index: A metric measuring the speed and volume of capital outflows from high-beta (Nasdaq/Tech) to low-beta (Staples) to predict the onset of \"rotation-driven\" price appreciation.",
+        "Dow-Component Resilience Factor: A measure of how an individual stock's price responds when its index (e.g., the Dow) is experiencing artificial volatility from non-staple components (e.g., UNH), helping distinguish between \"contagion\" selling and \"index-weighting\" support.",
+        "Institutional \"Safe-Haven\" Flow Tracker: Real-time monitoring of institutional volume in defensive sectors during days where the broader tech/growth market closes down >1.5%."
+    ],
+    "MEMORY_CAP": 0.21733333333333332,
+    "MISSING_CAP": 0.32925
+}

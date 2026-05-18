@@ -1,0 +1,28 @@
+{
+    "SECTOR": "[Semiconductors & AI Hardware]\nThis sector represents the core hardware layer of the global tech ecosystem, including chip design, foundry manufacturing, and AI infrastructure (e.g., NVDA, AMD, INTC, TSM, AVGO, QCOM). Stock movements are highly sensitive to computing demand, geopolitical supply chain shifts, semiconductor cycles, and capital expenditure (CapEx) from major tech firms.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro-Liquidity Hierarchy: CPI, FOMC, and broad market liquidity dictate price action unless a stock demonstrates clear fundamental decoupling.",
+        "Hyperscaler CapEx & Margins: Infrastructure investment and forward-looking guidance supersede GAAP earnings or one-time product news.",
+        "Legacy Drag vs. AI Growth: AI-native momentum fails to establish floors if legacy segments (handsets/PC) face margin compression; institutional capital prioritizes core stability.",
+        "Analyst Sentiment as Liquidity: Downgrades during sector rallies signal institutional rotation; conversely, downgrades following deep sell-offs often indicate \"priced-in\" bottoms.",
+        "Quiet Period & Peer Sensitivity: Pre-earnings, stocks act as macro-proxies; they are hypersensitive to peer guidance misses, which override company-specific product narratives.",
+        "Technical Mean-Reversion: Rallies exceeding 8% over multi-week periods favor profit-taking, while 15%+ declines over 21 days typically establish institutional accumulation floors.",
+        "Geopolitical Binary Catalysts: Resolution of geopolitical supply-chain risks acts as a stronger price-floor driver than individual product launches.",
+        "Event-Driven Exhaustion: Major conferences and product reveals act as liquidity exit points; sell the news once momentum-driven rallies reach exhaustion.",
+        "Exhaustion Floor Dynamics: In high-beta semiconductor stocks, a 15%+ decline over 21 days acts as a structural circuit breaker, where negative news (like peer earnings misses) is met with \"neutral\" price action rather than further selling, indicating the bearish narrative is fully priced in.",
+        "Divergence in Sentiment vs. Positioning: When analyst downgrades (UBS, Mizuho, Zacks) occur sequentially at the end of a long-term downtrend, they often serve as liquidity providers for institutional bottom-fishing rather than catalysts for further downside."
+    ],
+    "MISSING": [
+        "Macro-Geopolitical Beta: Measures sector sensitivity to trade restrictions, fiscal policy, and cross-asset correlation shifts.",
+        "Market Positioning & Exhaustion: Tracks institutional sentiment and short-interest liquidity traps to identify price floors and reversal points.",
+        "Capital Efficiency & Catalyst Saturation: Monitors ROI on AI-infrastructure spending versus the decay rate of product-launch momentum.",
+        "Cross-Peer Contagion Index: Quantifies the impact of supply chain constraints or earnings guidance across the value chain to anticipate sector-wide re-ratings.",
+        "Earnings Event-Horizon Metric: Dynamically weights upcoming earnings reports against prevailing analyst sentiment to predict macro-driven mean reversion.",
+        "Valuation-to-Sentiment Gap: A metric comparing current P/E multiples against the historical \"panic-selling\" average to identify when negative analyst ratings become contrarian buy signals.",
+        "Institutional Flow Accumulation: Real-time tracking of net inflows/outflows during periods of high-volume downgrades to distinguish between \"capitulation selling\" and \"institutional accumulation.\"",
+        "Sector-Specific Sensitivity Decay: A measure of how quickly a stock’s sensitivity to peer earnings (e.g., INTC, MSFT) diminishes as the stock nears a multi-week technical support level."
+    ],
+    "MEMORY_CAP": 0.368,
+    "MISSING_CAP": 0.36714285714285716
+}

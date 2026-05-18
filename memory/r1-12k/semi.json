@@ -1,0 +1,41 @@
+{
+    "SECTOR": "[Semiconductors & AI Hardware]\nThis sector represents the core hardware layer of the global tech ecosystem, including chip design, foundry manufacturing, and AI infrastructure (e.g., NVDA, AMD, INTC, TSM, AVGO, QCOM). Stock movements are highly sensitive to computing demand, geopolitical supply chain shifts, semiconductor cycles, and capital expenditure (CapEx) from major tech firms.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "TSMC CapEx and peer guidance are the primary fundamental truth; ignore idiosyncratic noise and short-term volatility.",
+        "Macro-betas (SOX Index/CPI/NFP/FOMC) override firm-level catalysts during high-volatility regimes; wait for decoupling as a signal of institutional strength.",
+        "Insider selling (Form 4s) functions as a psychological \"soft cap\" that nullifies bullish catalysts unless the macro environment is aggressively dovish.",
+        "Year-end (final two weeks) liquidity drains turn positive catalysts into \"exit liquidity\"; institutional accumulation typically resets in the first week of January.",
+        "A \"Valuation Floor\" is established when a stock resists negative news (downgrades/supply constraints) at technical support levels, signaling that downside risk is priced in.",
+        "M&A and strategic pivots (e.g., Edge AI/Robotics) serve as \"fundamental anchors\" that override transient margin concerns if they significantly expand total addressable market (TAM).",
+        "\"Sell-the-fact\" product launches represent ceilings at highs but act as institutional re-entry points when the stock is fundamentally oversold.",
+        "Transitioning companies (e.g., Handset-to-AI) face valuation penalties until AI revenue is explicitly quantified in forward guidance; ignore iterative product news in the interim.",
+        "Institutional accumulation during pre-earnings periods signals that negative sentiment is fully absorbed; prioritize volume-based accumulation over retail-driven price swings.",
+        "Post-holiday \"Decoupling\" from the SOX index is the highest-conviction signal for institutional \"flight-to-quality\" and sustained trend reversals.",
+        "During active trade-war or tariff-related geopolitical cycles, macro-policy announcements (e.g., 25% semiconductor tariffs) override positive foundry CapEx guidance.",
+        "A \"Downgrade-Sentiment Loop\"—where multiple analyst notes reinforce a singular negative narrative (e.g., \"handset drag\")—creates a gravity-well that prevents positive idiosyncratic catalysts from achieving a price reversal until the \"analyst-revision cycle\" fully exhausts.",
+        "In high-volatility regimes, positive foundry earnings are \"priced-in\" to the broader SOX index but are insufficient to support lagging individual stocks currently suffering from specific analyst downgrades and negative technical momentum.",
+        "\"Exhaustion-Gap\" Reversals: In a downtrend defined by analyst downgrades, the absence of new negative news during a \"Quiet Period\" often signals that the selling pressure has reached its maximum elasticity; the stock becomes prone to sharp \"snap-back\" rallies on any minor macro-relief (e.g., tariff cancellations).",
+        "Technical Support vs. Sentiment Drag: When a stock hits a multi-week support level (150-155 range) simultaneously with a macro-policy resolution, the technical floor overrides the \"Downgrade-Sentiment Loop,\" leading to a rapid reversal regardless of the lack of company-specific news.",
+        "\"Peer-Guidance Sensitivity\": In high-dispersion semiconductor markets, a major peer's (e.g., INTC) guidance regarding \"acute supply constraints\" acts as a sector-wide signal that overrides idiosyncratic \"quiet period\" stability, especially when the target stock (QCOM) is already in a negative analyst-revision cycle.",
+        "\"Quiet Period Stabilization\": During a sustained analyst-driven downtrend, the entry into a \"Quiet Period\" serves as a volatility dampener; if no new negative fundamental news emerges, the stock price tends to consolidate (neutralize) at technical support levels even if macroeconomic sentiment remains poor.",
+        "\"Sentiment Saturation\": In high-frequency downgrade cycles, the impact of subsequent downgrades (e.g., Zacks) decreases exponentially compared to initial institutional revisions (e.g., Mizuho/UBS), as the \"negative narrative\" is already fully baked into the current valuation floor.",
+        "\"Technical Floor Resilience\": When a stock has corrected >15% over a 3-week period, the probability of further downside on \"macro noise\" decreases significantly, as institutional \"value\" buyers begin to offset \"momentum\" sellers, leading to a Neutral outcome rather than a sustained breakdown.",
+        "\"Sentiment Exhaustion Floor\": In advanced downtrends, the failure of high-impact negative macro events (e.g., major bellwether earnings misses) to breach established multi-week support levels is a high-confidence signal for a transition to Neutral sentiment.",
+        "\"Valuation Anchoring\": When a stock's price target has been repeatedly slashed by primary analysts (Mizuho/UBS), subsequent downgrades from secondary firms (Zacks) lose their downward price momentum and function as \"non-events,\" confirming the floor is established."
+    ],
+    "MISSING": [
+        "Macro-Micro Decoupling Index: Real-time sensitivity filter distinguishing systematic risk (geopolitics/macro) from idiosyncratic fundamental catalysts.",
+        "Sentiment Exhaustion Metric: Quantifies \"peak bearishness\" by measuring the decay in price-target downgrade impact and news saturation thresholds.",
+        "CapEx-to-Revenue Efficiency: Tracks hyperscaler order quality and inventory bloat to differentiate between sustainable demand and cyclical spending spikes.",
+        "Institutional Flow Divergence: Detects the \"trough\" of sell-offs by monitoring institutional absorption of retail-driven analyst downgrades.",
+        "Supply-Chain Contagion Model: Evaluates whether sector-wide warnings (e.g., foundry constraints) are industry-systemic or company-specific to filter news noise.",
+        "Strategic Pivot Velocity: Measures the financial materiality of revenue-mix shifts (e.g., Edge/Auto vs. Cloud) to validate long-term product-market fit.",
+        "Quiet Period Volatility-Volume Matrix: Predicts price breakouts or institutional abandonment by analyzing liquidity trends during news-light intervals.",
+        "Support-Level Resilience Testing: A metric that tracks the duration of price consolidation at technical support levels during periods of high-impact negative news to identify institutional floor-building.",
+        "Down-Gap Elasticity: A signal that measures the \"snap-back\" potential or consolidation likelihood when a stock fails to make a new low despite systemic sector-wide sell-offs.",
+        "Analyst Consensus Decay: Tracks the delta between the first major institutional downgrade in a cycle vs. subsequent secondary downgrades to identify the point of diminishing marginal impact on price."
+    ],
+    "MEMORY_CAP": 0.382,
+    "MISSING_CAP": 0.204
+}

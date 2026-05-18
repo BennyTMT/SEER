@@ -1,0 +1,30 @@
+{
+    "SECTOR": "[Consumer Staples & Big-Box Retail]\nThis sector features essential goods manufacturers, beverage giants, and large-scale retail chains (e.g., WMT, COST, KO, PEP, PG). Known for their defensive market characteristics, these stocks are primarily driven by inflation rates, consumer purchasing power, commodity pricing, and supply chain efficiency.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Staples serve as macro-proxies; institutional risk-parity flows during market shocks override company-specific fundamentals and bearish analyst sentiment.",
+        "Market volatility renders analyst price targets \"stale noise,\" while peer-group \"Halo\" earnings beats trigger technical reversals in laggards.",
+        "Dividend declarations act as a valuation floor; ex-dividend price drops are frequently neutralized by institutional accumulation in \"risk-on\" regimes.",
+        "Macro-geopolitical stabilization (e.g., tariff de-escalation) acts as the primary momentum driver, overriding idiosyncratic legal or operational risks.",
+        "Retail-manufacturer pricing power is the primary fundamental headwind; \"trade-down\" signals and insider selling are stronger indicators of decline than analyst downgrades.",
+        "Year-end liquidity thinning shifts price action toward institutional target-weighting and tax-sensitive consolidation, rather than fundamental valuation.",
+        "During broad index sell-offs, Staples decouple from negative internal sentiment to function as a flight-to-safety vehicle, rendering traditional technical resistance levels ineffective."
+    ],
+    "MISSING": [
+        "Private-Label Substitution Index: Tracking margin resilience via brand-to-discount volume shifts.",
+        "Transmission Velocity: Measuring the lag between retail sell-through and manufacturer margin realization.",
+        "Yield-Competitive Valuation: Assessing dividend attractiveness relative to risk-free rates and historical recovery coefficients.",
+        "Macro-Geopolitical Sensitivity: Mapping revenue and supply chain vulnerability to trade tariffs and risk-aversion regimes.",
+        "Institutional Liquidity & Flow: Distinguishing structural accumulation from transient volatility using volume-profile and flow-through analysis.",
+        "Mean-Reversion & Alpha Proxy: Isolating sector-wide performance deltas from macro-driven \"Flight to Safety\" inflows.",
+        "Regime-Shift Sentiment Index: Weighting fundamental earnings data against evolving macro-volatility and analyst consensus shifts.",
+        "Insider Transaction Sensitivity: A formal tracking mechanism for C-suite stock sales relative to institutional accumulation to identify if insider selling offsets institutional \"buy-the-dip\" behavior.",
+        "Analyst \"Target-vs-Rating\" Divergence: A quantitative framework to interpret cases where analysts raise price targets while downgrading ratings, as this often indicates fundamental uncertainty that the market interprets as bearish.",
+        "Pricing Power Elasticity Metrics: Real-time tracking of manufacturer retail-pricing adjustments vs. competitor private-label pricing to gauge the validity of \"pricing power\" concerns cited by analysts.",
+        "Macro-Beta Decoupling Index: A metric to quantify the degree to which a stock is currently trading as a \"Defensive Proxy\" versus its fundamental earnings trajectory.",
+        "Institutional Flow-Through Correlation: A real-time tracker correlating daily sector-specific inflows (e.g., XLP volume) with the price action of individual constituent stocks (e.g., PG) to identify when broad sector rotation is likely to override individual stock news.",
+        "Insider-Institutional Divergence Signal: A formal indicator tracking the ratio of C-suite sell-volume to institutional buy-volume to determine which force is currently dominating price discovery."
+    ],
+    "MEMORY_CAP": 0.2212,
+    "MISSING_CAP": 0.6008571428571429
+}

@@ -1,0 +1,27 @@
+{
+    "SECTOR": "[Financial Services & Payments]\nThis sector comprises major banking institutions and global payment networks (e.g., JPM, BAC, V, MA). These equities are heavily influenced by macroeconomic indicators, central bank interest rate decisions, consumer credit health, transaction volumes, and regulatory policy shifts.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Transaction volume is the primary performance indicator, overriding macro sentiment unless NFP misses exceed 15% or systemic revenue threats (fee/interest caps) emerge.",
+        "Regulatory headlines trigger initial \"guilt-by-association\" sell-offs; price stabilizes once \"fatigue\" sets in or headlines shift from active threats to stalemates.",
+        "Structural price floors are established by shareholder return programs, dividends, and oversold technical conditions (5-7% drawdown), overriding short-term negative volatility.",
+        "Fundamental growth catalysts (e.g., partnerships, earnings) are ignored during high-velocity legislative debates or seasonal liquidity events until narrative uncertainty resolves.",
+        "Payment duopolies act as \"growth-defensive\" assets; their resilience is measured by the decoupling of proprietary spending data from broader XLF volatility.",
+        "Market focus favors the relative growth delta between peers (e.g., V vs. MA) over absolute firm performance during earnings cycles.",
+        "Earnings-Macro Correlation Trap: In periods of high legislative or sector-wide uncertainty, stellar earnings beats are frequently used as liquidity events for institutional profit-taking rather than catalysts for further upside.",
+        "The \"Restructuring Premium\" Paradox: Workforce reductions, while technically margin-accretive, are often interpreted by the market as a defensive signal of slowing organic growth in volatile macro environments, leading to immediate price suppression."
+    ],
+    "MISSING": [
+        "Macro-Elasticity Index: Quantifying real-growth sensitivity to interest rate and transaction volume deltas.",
+        "Regulatory Saturation Gauge: Measuring the decay in price sensitivity to recurring legislative threats.",
+        "Institutional Flow & Contagion Index: Monitoring systematic selling exhaustion and sector-wide risk correlation.",
+        "Narrative-Fundamental Divergence: Framework for identifying mispricing where sentiment lags actual spending data.",
+        "Policy-Fundamental Conversion Ratio: Tracking the time-lag for equities to decouple from regulatory fear and resume fundamental tracking.",
+        "Legislative Velocity Metric: Calculating the impact of political discourse rate-of-change on price suppression.",
+        "Sector-Rotation Sensitivity Metric: Tracking how capital flows out of \"growth-defensive\" payment stocks into broader market indices during sector-wide sell-offs.",
+        "Earnings-Response Decay Factor: Measuring the statistical likelihood of \"sell-the-news\" reactions following a sustained pre-earnings recovery rally.",
+        "Legislative-Sentiment Neutralization Index: A framework to determine when political headlines have fully saturated the stock price, creating a \"floor\" that is immune to further negative political rhetoric."
+    ],
+    "MEMORY_CAP": 0.2904,
+    "MISSING_CAP": 0.342
+}

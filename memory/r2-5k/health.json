@@ -1,0 +1,30 @@
+{
+    "SECTOR": "[Healthcare & Pharmaceuticals]\nThis sector includes leading pharmaceutical developers, biotechnology firms, and managed healthcare providers (e.g., JNJ, PFE, LLY, UNH). Critical events for this sector involve clinical trial results, FDA approvals or rejections, drug pipeline developments, patent expirations, and shifts in healthcare legislation.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro-Valuation: Healthcare acts as a bond-proxy; rising Treasury yields override defensive rotation, while a shift from growth to peer-comparative valuation triggers premium compression.",
+        "Regulatory Anticipation: Institutional de-risking before high-profile hearings creates a downward drift; the actual event—or proactive concessions—often acts as a \"buy the news\" signal.",
+        "Sentiment Saturation: Redundant negative headlines or \"kitchen sink\" disclosure events within a 48-hour window signal a bottom, as the marginal impact of bad news hits exhaustion.",
+        "Regulatory Contagion: Peer settlements or industry-wide investigations trigger a sector-wide \"probabilistic penalty,\" causing stocks to trade in lockstep regardless of individual fundamental strength.",
+        "Technical Capitulation: Extreme single-day price declines (15%+) trigger immediate institutional short-covering and technical mean-reversion, rendering fundamental bearishness irrelevant in the short term.",
+        "Margin-Based Anchoring: Managed care valuations are strictly tied to Medicare Advantage margins; shifts in government subsidies serve as the primary fundamental leading indicator for repricing.",
+        "M&A Pivot: Regulatory approval of M&A transactions shifts market focus from \"deal risk\" to operational performance, acting as a volatility dampener for the combined entity.",
+        "Guidance-Contraction Multiplier: The first annual revenue contraction in a mature, defensive company acts as a \"valuation pivot\" that permanently resets the P/E multiple, overriding previous historical support levels regardless of analyst buy ratings.",
+        "Regulatory Rate-Ceiling: Medicare Advantage rate announcements (CMS Advance Notices) that fall below the cost of inflation act as an immediate hard cap on sector-wide growth, rendering historical \"defensive\" status irrelevant.",
+        "Institutional Flow Dominance: In major healthcare cap-structure shifts, institutional selling pressure following a guidance miss consistently overrides retail-driven stabilization or \"dead cat\" bounces."
+    ],
+    "MISSING": [
+        "Regulatory Contagion Multiplier: Tracks sector-wide valuation compression driven by peer-specific legal or legislative headwinds.",
+        "Sentiment Saturation Index: Identifies valuation floors by measuring the marginal price impact of peak negative headline density.",
+        "Institutional Flow-Velocity Divergence: Monitors the gap between panic-driven liquidations and strategic institutional accumulation ahead of clearing events.",
+        "Strategic Concession Polarity: Distinguishes between defensive regulatory surrenders and proactive growth-oriented corporate pivots.",
+        "Uncertainty-Risk Pricing Delta: Quantifies the \"fear discount\" to isolate stocks oversold on policy speculation versus underlying clinical fundamentals.",
+        "Short-Interest Clearing Metric: Signals potential relief rallies by tracking short-position build-ups relative to known regulatory announcement dates.",
+        "Revenue-Contraction Sensitivity Metric: A model to quantify the \"valuation reset\" required when a mature, defensive firm shifts from consistent growth to revenue contraction.",
+        "Regulatory-to-Earnings Translation Model: A predictive framework for converting CMS percentage rate increases (or cuts) into precise EPS impact ranges for managed care providers.",
+        "Institutional \"Wait-and-See\" Threshold: A signal tracking the volume of institutional selling that occurs *post-capitulation* to determine when a stock has transitioned from \"falling knife\" to \"base-building.\"",
+        "Policy-Driven Multiple Compression Index: Tracks how legislative threats (like PBM/ACA profit restrictions) specifically force a compression of the Price-to-Forward-Earnings multiple relative to historical sector averages."
+    ],
+    "MEMORY_CAP": 0.4,
+    "MISSING_CAP": 0.4662857142857143
+}

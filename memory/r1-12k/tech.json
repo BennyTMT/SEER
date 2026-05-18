@@ -1,0 +1,33 @@
+{
+    "SECTOR": "[Technology, Software & Media] \nThis sector encompasses global leaders in consumer electronics, cloud computing, e-commerce, enterprise software, and digital entertainment (e.g., AAPL, MSFT, GOOGL, AMZN, META, TSLA, NFLX, DIS, ADBE, CRM, ORCL). Key drivers include user growth metrics, cloud revenue, AI integration trends, and consumer discretionary spending.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "CapEx-Sustainability Threshold: Markets treat AI-infrastructure growth as a risk unless backed by high-quality, non-debt-dependent financing; \"in-line\" macro data is often viewed negatively if debt-sustainability fears persist.",
+        "Narrative-Execution Divergence: When negative sector narratives (e.g., \"AI debt\") dominate, positive institutional upgrades often serve as \"exit liquidity,\" while positive hardware-supplier guidance (e.g., TSMC) acts as the only valid fundamental anchor.",
+        "Litigation Decay: Legal and regulatory overhangs follow a 72-hour decay curve; price impact diminishes significantly after this window unless new, non-repetitive material facts are introduced.",
+        "Algorithmic Liquidity Cascades: Breaches of 20-week SMAs and psychological supports trigger algorithmic stop-losses, creating \"air pockets\" that persist until volume-profile nodes are reached.",
+        "Ex-Dividend Pivot: Algorithmic front-running of ex-dividend drops often causes bottoms to form *before* the ex-date, making the actual ex-date a frequent pivot point for relief rallies.",
+        "Structural Skepticism: In high-CapEx environments, positive strategic announcements (JVs, partnerships) are scrutinized for cash-flow evidence; \"sell-the-news\" behavior is the default response if the firm's debt-sustainability is in doubt.",
+        "Capitulation-Cluster Reversal: When a stock has corrected significantly (>30%) from highs, a dense cluster of analyst downgrades often marks the final \"wash-out\" of retail and short-term institutional sentiment, acting as a contrarian buy signal rather than a bearish continuation.",
+        "Fundamental Anchor Overrides: During periods of intense narrative-driven selling (e.g., \"AI debt\" concerns), hardware-supplier guidance (like TSMC) or major strategic wins (TikTok JV) provide a \"fundamental floor\" that forces the stock to decouple from analyst price-target sentiment.",
+        "Narrative-Sentiment Mismatch: If a stock fails to drop significantly on the release of \"negative\" analyst news, it indicates that the market has already priced in the worst-case scenario; this \"resilience\" is a high-conviction signal for a trend reversal.",
+        "Narrative-Overhang Threshold: When a stock faces simultaneous legal (class-action) and financial (debt-sustainability) headwinds, positive operational news (JVs/Partnerships) is structurally discounted by the market until the legal \"discovery\" or \"filing\" phase concludes; operational gains are treated as \"noise\" until the narrative overhang reaches its expiration window.",
+        "Analyst-Downgrade Density vs. Institutional Rotation: A high-density cluster of downgrades (3+ firms within 48 hours) acts as a powerful bear-trap indicator if the stock is already at a technical support level, but acts as a continuation signal if the stock has broken below its 50-day moving average, confirming that the \"re-rating\" is institutional, not just retail.",
+        "CapEx-Growth Decoupling: In hyperscaler-driven markets, if a sector leader reports high CapEx without proportional revenue acceleration, the entire sector faces an immediate \"re-rating\" of the P/E multiple. This overrides idiosyncratic positive news (like new JVs or product launches) for all peers in the supply/software chain.",
+        "Legal-Financial Synergy Risk: When litigation (e.g., class-action) focuses on financial transparency (e.g., debt/CapEx), the market treats the firm as a \"black box\" where operational data is ignored until the legal risk is quantified or resolved.",
+        "Proxy-Contagion Sensitivity: During earnings season, if a dominant firm (e.g., MSFT) provides a negative read-through on AI ROI, smaller or similarly leveraged peers (e.g., ORCL) will experience a \"proxy sell-off\" regardless of their own internal news cycle, as investors rotate out of the entire \"AI Infrastructure\" theme."
+    ],
+    "MISSING": [
+        "Capital Deployment Efficiency & Solvency Sensitivity: Monitors the conversion of CapEx into revenue and debt-servicing capacity relative to interest-rate volatility.",
+        "Institutional Conviction & Flow Velocity: Measures volume-adjusted institutional positioning during analyst clusters to differentiate genuine accumulation from exit liquidity.",
+        "Narrative Exhaustion & Sentiment Decay: Quantifies the temporal duration of negative headlines to identify market apathy and structural price floors.",
+        "Strategic Execution & Synergy Realization: Tracks the lag between M&A/JV announcements and fundamental performance to identify undervalued operational integration.",
+        "Beta-Decoupling & Correlation Sensitivity: Detects idiosyncratic price divergence from sector benchmarks to highlight structural mispricing or narrative-driven traps.",
+        "AI Revenue-to-CapEx Velocity Metric: A quantitative measure tracking the temporal lag between infrastructure spending and tangible revenue recognition to identify potential \"AI bubbles.\"",
+        "Litigation-Sentiment Correlation Index: A tracking mechanism that monitors the delta between legal filing dates and price volatility to determine when the \"litigation discount\" is fully baked into the stock price.",
+        "Proxy-Sensitivity Coefficient: A dynamic metric that quantifies how heavily a specific stock tracks the earnings results of its largest sector peers, allowing for the anticipation of \"contagion\" moves before they occur.",
+        "Debt-Serviceability Sensitivity to AI-Growth: A metric comparing interest expense growth against AI-driven revenue growth to identify \"solvency-threat\" thresholds."
+    ],
+    "MEMORY_CAP": 0.31225,
+    "MISSING_CAP": 0.199875
+}

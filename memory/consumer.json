@@ -1,0 +1,8 @@
+{
+    "SECTOR": "[Consumer Staples & Big-Box Retail]\nThis sector features essential goods manufacturers, beverage giants, and large-scale retail chains (e.g., WMT, COST, KO, PEP, PG). Known for their defensive market characteristics, these stocks are primarily driven by inflation rates, consumer purchasing power, commodity pricing, and supply chain efficiency.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [],
+    "MISSING": [],
+    "MEMORY_CAP": 0,
+    "MISSING_CAP": 0
+}

@@ -1,0 +1,28 @@
+{
+    "SECTOR": "[Technology, Software & Media] \nThis sector encompasses global leaders in consumer electronics, cloud computing, e-commerce, enterprise software, and digital entertainment (e.g., AAPL, MSFT, GOOGL, AMZN, META, TSLA, NFLX, DIS, ADBE, CRM, ORCL). Key drivers include user growth metrics, cloud revenue, AI integration trends, and consumer discretionary spending.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro-Liquidity & Systemic Risk: Treasury yields and technical breaches of the 20-week SMA trigger systemic risk-off, overriding company-specific news or margin-call contagion.",
+        "Infrastructure-Led Valuation: Market valuation prioritizes FCF and semiconductor-foundry CapEx guidance (e.g., TSMC/Nvidia) over firm-specific legal or debt controversies.",
+        "Sentiment \"Despair Floors\": Once negative headlines (litigation/downgrades) reach saturation, stocks develop \"headline fatigue,\" creating floors where technical accumulation overrides further negative news.",
+        "Institutional Liquidity Dynamics: Strategic partnerships or positive earnings are frequently used as \"exit liquidity\" by institutions to reduce exposure, while routine insider selling is ignored if Tier-1 growth momentum remains verified.",
+        "Strategic De-risking: Resolution of long-standing regulatory or structural disputes acts as a violent mean-reversion catalyst, particularly when the stock is trading at a significant discount to recent highs.",
+        "Sector-Wide Capital Efficiency Sensitivity: In periods of high-interest rates or macroeconomic uncertainty, hyperscaler CapEx reporting acts as a \"sector-wide proxy\" for cloud software profitability; poor returns on hardware investment by industry leaders trigger immediate, non-discriminatory selling of all enterprise-cloud peers regardless of firm-specific product launches.",
+        "Headline Fatigue Thresholds: Recurring negative narratives (e.g., bondholder litigation, regulatory threats) eventually lose their impact on price volatility once the market has priced in the \"worst-case\" scenario, shifting focus back to core fundamental drivers like revenue growth and margin expansion."
+    ],
+    "MISSING": [
+        "Infrastructure-to-Revenue Velocity: Lead-lag correlation between hardware CapEx and downstream cloud/software growth.",
+        "Sentiment Saturation Index: Quantifies price-decay following recurring negative news and the transition from retail panic to institutional accumulation.",
+        "Regulatory & Macro Friction Decay: Measures the market's normalization of legal, geopolitical, and trade-related headwinds.",
+        "Systemic Beta & Contagion Sensitivity: Tracks sector vulnerability to non-correlated macro shocks and cross-sector liquidity outflows.",
+        "Fundamental Decoupling Momentum: Identifies idiosyncratic alpha by measuring performance divergence from peer-group indices.",
+        "Strategic Partnership Delta: Quantifies the delta between market expectations and realized revenue from enterprise ecosystem integrations.",
+        "Anticipation-to-Execution Risk: Predicts \"sell-the-news\" probabilities based on the duration of pre-announcement hype cycles.",
+        "Cloud-Margin Sensitivity Metric: A quantitative measure of how much a change in lead-competitor (e.g., MSFT, AWS) cloud margins correlates with the valuation of secondary enterprise software players.",
+        "AI-CapEx Efficiency Ratio: A tracker of the delta between reported data-center spend and subsequent quarter-over-quarter cloud revenue growth across the S&P 500 tech stack.",
+        "Litigation-to-Liquidity Delta: A model measuring the volume of institutional selling specifically tied to legal/bondholder lawsuits vs. general market selling to distinguish between \"panic\" and \"forced institutional de-risking.\"",
+        "Peer-Group Contagion Velocity: A predictive tool that maps the time-lag between a major sector peer's earnings miss and the subsequent price adjustment in related, smaller-cap enterprise software stocks."
+    ],
+    "MEMORY_CAP": 0.336,
+    "MISSING_CAP": 0.49
+}

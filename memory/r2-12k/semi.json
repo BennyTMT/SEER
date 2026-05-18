@@ -1,0 +1,41 @@
+{
+    "SECTOR": "[Semiconductors & AI Hardware]\nThis sector represents the core hardware layer of the global tech ecosystem, including chip design, foundry manufacturing, and AI infrastructure (e.g., NVDA, AMD, INTC, TSM, AVGO, QCOM). Stock movements are highly sensitive to computing demand, geopolitical supply chain shifts, semiconductor cycles, and capital expenditure (CapEx) from major tech firms.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro-liquidity and geopolitical risk-premium expansion act as sector-wide valuation ceilings; resolution of these threats triggers violent, immediate \"relief\" rallies.",
+        "Strategic pivots (e.g., CES, multi-pillar AI/Auto roadmaps) provide a \"valuation floor,\" but lack \"escape velocity\" if a simultaneous analyst downgrade resets the upside ceiling.",
+        "Event-driven catalysts (product launches, M&A) are \"buy-the-event\" if the stock has corrected, but \"sell-the-news\" if the stock is extended >35% or facing analyst target gravity.",
+        "Year-end liquidity gaps (final 10 days) and insider selling create technical overhead that neutralizes positive idiosyncratic news regardless of fundamental strength.",
+        "Post-washout (>15% drawdown) setups are high-conviction \"buy\" signals when combined with strategic narrative pivots, as supply overhang has been exhausted.",
+        "Analyst downgrades targeting current price levels create \"Institutional Magnet\" zones, forcing sideways consolidation that overrides even high-quality partnership announcements.",
+        "Sector-wide margin sensitivity (earnings misses) and supply-chain constraints override individual company catalysts until sector-wide volatility subsides.",
+        "Double-confirmation—idiosyncratic bullish news plus sector-wide earnings strength—is required to break multi-week technical resistance levels.",
+        "\"Earnings-Guidance Contagion\": In the semiconductor sector, specific guidance failures (e.g., supply constraints) from a peer with overlapping product segments (Client/Edge) create an immediate, high-probability \"sympathy sell-off\" that overrides a target company’s own strategic product announcements.",
+        "\"Quiet Period Neutralization\": During a company’s pre-earnings \"Quiet Period,\" the stock’s sensitivity to sector-wide negative news increases significantly, as the company is restricted from issuing rebuttals or providing real-time data to counter negative analyst sentiment.",
+        "\"Analyst Target Gravity\": When a recent downgrade lowers a price target to near-current trading levels, it creates a \"gravitational floor\" that prevents rallies even during periods of broad market strength, necessitating a major sector-wide catalyst to break the range.",
+        "\"Sentiment Exhaustion Threshold\": In a prolonged downtrend, the arrival of consecutive negative analyst downgrades (especially when price targets reach current trading levels) often signals a local bottom rather than a continuation, as the \"worst-case\" narrative becomes fully priced in.",
+        "\"Quiet Period Stabilization\": During a pre-earnings \"Quiet Period,\" high-beta stocks often experience a volatility contraction phase; if the stock has already undergone a significant correction (>15%), negative news flow is frequently ignored by institutional buyers who are waiting for the earnings print to initiate new positions.",
+        "\"Exhaustion-Defiance Phenomenon\": In the final sessions before a major earnings event, if a stock has undergone a sustained, significant correction (>15% over 20 days), the arrival of additional negative news (even from key partners) often fails to trigger further price decline. This signifies that the \"bearish narrative\" is fully priced, and the stock enters a period of \"volatility contraction\" where it becomes immune to further headline shocks until the earnings print provides a new catalyst.",
+        "\"Institutional Anchoring\": When analysts cluster price targets (e.g., $160) near current trading levels, it creates a psychological floor that discourages short-selling, as the risk-reward for further downside becomes unattractive to institutional participants, leading to price stabilization despite negative news."
+    ],
+    "MISSING": [
+        "Narrative-Dominance Index: Measures the weight of structural AI-growth narratives versus cyclical analyst-downgrade sentiment in driving price action.",
+        "Institutional Absorption Threshold: Quantifies volume-profile exhaustion points where insider selling and tax-loss harvesting are fully offset by institutional demand.",
+        "Sector-Contagion Sensitivity: Estimates the magnitude of sympathy sell-offs based on product-mix correlation and historical reactions to peer-group supply warnings.",
+        "Catalyst-Saturation Ratio: Evaluates pre-event momentum versus news quality to predict \"sell-the-news\" consolidation versus breakout potential.",
+        "Strategic-Pivot Alpha: Quantifies market valuation shifts as firms transition from legacy cyclical revenue to integrated AI-ecosystem dependencies.",
+        "Valuation-Gravity Delta: Tracks the distance between current market price and consensus price targets to identify \"downward pull\" or \"escape velocity\" triggers.",
+        "Macro-Liquidity Elasticity: Measures the sensitivity of sector volatility to broader policy/liquidity headlines versus idiosyncratic fundamentals.",
+        "Cross-Domain Integration Multiplier: Gauges the \"valuation floor\" strength by aggregating the breadth of partnerships across non-tech industries (e.g., Auto, Robotics).",
+        "Geopolitical Resilience Score: Models the decay rate of risk-premiums following trade restrictions or supply-chain threats based on sector-wide decoupling probability.",
+        "Liquidity-Adjusted Sentiment Inertia: Tracks order-book depth and institutional flow during low-volume periods to predict vulnerability to external shocks.",
+        "Sentiment Exhaustion Metric: A quantitative measure (e.g., RSI divergence or news-sentiment velocity) that signals when negative analyst coverage has reached a saturation point, suggesting a transition from \"selling\" to \"neutral consolidation.\"",
+        "Quiet Period Volatility Index: Tracks historical price variance of specific stocks during their respective \"Quiet Periods\" to differentiate between \"vacuum-driven\" drift and \"event-anticipation\" accumulation.",
+        "Institutional \"Wait-and-See\" Probability: Models the likelihood of trading volume remaining flat despite negative headlines, indicating that major market participants have paused activity pending a specific binary event (earnings).",
+        "Price-to-News Saturation Index: A metric that tracks the delta between the cumulative negative news flow and the price drawdown to identify when a stock has transitioned from \"oversold\" to \"news-immune.\"",
+        "Institutional Positioning Density: Measures the volume and velocity of institutional outflows over the 30 days preceding an earnings date; low velocity during the \"Quiet Period\" suggests institutional conviction in holding through binary events.",
+        "\"Sympathy-Resistance\" Threshold: The quantitative limit at which a stock stops reacting to peer-group sell-offs (e.g., Intel's crash), signaling that the idiosyncratic risk has been decoupled from the broader sector contagion."
+    ],
+    "MEMORY_CAP": 0.29975,
+    "MISSING_CAP": 0.3655
+}

@@ -1,0 +1,43 @@
+{
+    "SECTOR": "[Healthcare & Pharmaceuticals]\nThis sector includes leading pharmaceutical developers, biotechnology firms, and managed healthcare providers (e.g., JNJ, PFE, LLY, UNH). Critical events for this sector involve clinical trial results, FDA approvals or rejections, drug pipeline developments, patent expirations, and shifts in healthcare legislation.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro-regulatory and interest-rate environments override idiosyncratic news; positive catalysts in volatile regimes often act as exit liquidity.",
+        "Institutional \"Value-Anchors\" and historical multiples serve as primary price floors, overriding transient margin-compression headlines.",
+        "Repetitive negative narratives (audits/journalism) reach \"saturated pricing\" where only unexpected, high-magnitude information triggers further downside.",
+        "Formal Congressional inquiries and subpoena-level threats create \"Regulatory Uncertainty Premiums\" that impose valuation ceilings, rendering analyst price targets temporarily irrelevant.",
+        "Analyst upgrades following sustained investigative headlines are only valid if they occur post-resolution; upgrades during active legislative inquiries signal institutional distribution.",
+        "Holiday-shortened weeks amplify negative news due to a lack of immediate corporate/regulatory rebuttal, creating \"drift-down\" effects that ignore technical support.",
+        "M&A activity is value-neutral until regulatory paths are fully cleared; divestiture requirements negate immediate synergy-based price appreciation.",
+        "Forward-looking guidance remains the primary valuation anchor, consistently overriding trailing earnings or sector-rotation flows.",
+        "Multi-day \"washout\" declines that fail to reach new local lows on high-impact negative news signal exhausted supply and tactical long opportunities.",
+        "Voluntary corporate concessions during active Congressional inquiries often trigger \"sell-the-news\" volatility; the market interprets these as defensive admissions of structural vulnerability rather than catalysts for stabilization.",
+        "Post-testimony price action is the true indicator of regulatory risk pricing: if a stock fails to rally or declines immediately after a major executive concession, it signals that the market is discounting the long-term impact of regulatory mandates over short-term PR wins.",
+        "\"Kitchen-Sinking\" Events: When a company reports a historic, low-guidance milestone (e.g., first revenue contraction in decades) following a period of intense regulatory pressure, the market often views this as a definitive valuation floor rather than a signal for further downside.",
+        "Capitulation vs. Contraction: A massive, high-volume gap-down on the day of a negative earnings release often signals the end of a \"price discovery\" phase, where the stock is effectively \"cleared\" of weak-handed investors, leading to a sharp mean-reversion or relief rally the following day.",
+        "Regulatory Exhaustion: When the delta between market expectation and regulatory reality (CMS rate cuts) is finally realized, the \"uncertainty premium\" evaporates, causing a rapid transition from selling to accumulation.",
+        "\"Guidance-Reality Gap\": In highly regulated sectors, when management's forward guidance contradicts the regulatory reality (CMS rate cuts), the market prioritizes the regulatory data over management's internal projections, leading to further downside despite \"value\" ratings.",
+        "\"Volatility Clustering\" in Regulatory Shifts: When negative policy announcements (CMS cuts) coincide with fundamental earnings misses, the volatility creates a prolonged price-discovery phase that prevents immediate technical support from holding, regardless of historical P/E floors.",
+        "The \"Analyst-Credibility Gap\": Following a historic guidance miss, sell-side \"buying opportunity\" calls are often ignored by institutional traders until a clear, independent sign of bottoming (e.g., a multi-day consolidation or stabilization in government rhetoric) occurs."
+    ],
+    "MISSING": [
+        "Macro-Regime Multiplier: Scales catalyst impact based on market-wide volatility and liquidity conditions.",
+        "Regulatory Escalation Index: Quantifies the transition from soft inquiries to hard enforcement and legislative mandates.",
+        "Institutional Flow Divergence: Distinguishes between structural fundamental shifts and temporary liquidity-driven price anomalies.",
+        "Sentiment Saturation & Decay Tracker: Measures market desensitization to recurring negative headlines and \"priced-in\" investigative reports.",
+        "Analyst-Legislative Delta: Signals contrarian opportunities by measuring the divergence between sell-side optimism and political/regulatory pressure.",
+        "Regulatory Discount Threshold: Calculates when P/E multiples have fully accounted for \"worst-case\" legal and policy outcomes.",
+        "Strategic Concession Efficacy: Evaluates if corporate policy responses (concessions) effectively reduce risk premiums or signal operational desperation.",
+        "Institutional Reversal Velocity: Tracks the speed and conviction of institutional exits following a shift from media scrutiny to official oversight.",
+        "Capitulation Volume Indicator: Measures the surge in trading volume on the day of a massive gap-down to determine if it represents a \"panic bottom\" or \"persistent distribution.\"",
+        "\"Kitchen-Sink\" Detection: Identifies corporate disclosures that combine multiple negative catalysts (guidance cuts, restructuring charges, regulatory warnings) into a single event, which often signals the end of a negative news cycle.",
+        "Valuation Reset Thresholds: Quantitative markers identifying when a stock's P/E or P/S ratio has reached a level that historically triggers institutional \"value-buying\" despite fundamental headwinds.",
+        "Mean-Reversion Velocity: Tracks the probability of an immediate bounce-back following a single-day decline exceeding 15%, specifically in large-cap stocks with strong structural market share.",
+        "Regulatory-Revenue Correlation Metric: A quantitative tool that measures the sensitivity of a company's revenue guidance to specific changes in federal reimbursement percentages (e.g., CMS rate cut percentage vs. anticipated revenue % delta).",
+        "Institutional Accumulation vs. Distribution Monitoring: Real-time tracking of institutional block trades during \"gap-down\" days to distinguish between forced liquidation (distribution) and opportunistic entry (accumulation).",
+        "Regulatory \"Ceiling\" Indicator: A metric tracking the frequency and intensity of congressional mentions of a specific firm, used to calculate when the \"Regulatory Uncertainty Premium\" has reached its maximum historical limit.",
+        "Technical Reversal Decay Rate: A model to determine if a multi-day recovery (like the 280-290 bounce) is a sustainable reversal or a \"dead cat bounce\" based on the volume profile of the initial crash."
+    ],
+    "MEMORY_CAP": 0.2936666666666667,
+    "MISSING_CAP": 0.345125
+}

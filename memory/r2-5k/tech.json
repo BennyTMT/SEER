@@ -1,0 +1,39 @@
+{
+    "SECTOR": "[Technology, Software & Media] \nThis sector encompasses global leaders in consumer electronics, cloud computing, e-commerce, enterprise software, and digital entertainment (e.g., AAPL, MSFT, GOOGL, AMZN, META, TSLA, NFLX, DIS, ADBE, CRM, ORCL). Key drivers include user growth metrics, cloud revenue, AI integration trends, and consumer discretionary spending.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Macro liquidity and institutional flow override fundamentals; catalysts are ignored during low-volume or holiday periods.",
+        "Funding stability and project financing viability outweigh contract growth; capital-intensive firms face \"distrust discounts\" until refinancing is verified.",
+        "Sector-wide thematic narratives (e.g., \"AI vs. Legacy\") override company-specific bullish signals; institutional rebalancing triggers selling regardless of valuation.",
+        "Technical structures dictate news response: in damaged charts, positive news triggers \"exit-on-strength\" institutional distribution, while negative news is ignored if support holds.",
+        "Structural weakness creates high sensitivity to litigation and negative headlines, acting as volatility multipliers regardless of claim merit.",
+        "Institutional re-entry requires a 48-72 hour \"digestion\" period post-shock, regardless of the quality of the news catalyst.",
+        "Relative strength failure during market rallies is a high-conviction bearish signal, indicating ongoing institutional distribution.",
+        "The \"Sentiment Exhaustion Floor\" occurs near the lowest street price target, where negative surprises are neutralized and mean-reversion potential increases.",
+        "The \"AI-Infrastructure Proxy Effect\": When sector-wide sentiment is dominated by high-CapEx narratives, \"blowout\" results from foundational hardware suppliers (e.g., TSMC, Nvidia) act as a macro-tailwind that overrides idiosyncratic legal or credit-related news.",
+        "Relief Rally Dynamics: Following a period of sustained selling (the \"January Bondholder Lawsuit\" cycle), stocks often show a high-beta response to positive macro-data as institutional short-covering converges with fundamental value-buying.",
+        "Lawsuit/Litigation \"Noise\" vs. \"Signal\": In the presence of a broad-market relief rally, legal headlines regarding CapEx disclosure act as a \"buyable dip\" rather than a fundamental impairment, provided the company's core cloud partnership ecosystem (e.g., Meta/Google) remains intact.",
+        "The \"Strategic Partnership Pivot\": When a company facing structural legal/debt headwinds finalizes a multi-year, tier-1 operational partnership (e.g., TikTok/ByteDance), the event acts as a \"narrative reset\" that overrides ongoing litigation, marking the end of the stock's defensive/correctional phase.",
+        "\"Sentiment Exhaustion\" Confirmation: A stock is primed for a \"Strong Up\" move when it tests a support level multiple times during a negative news cycle without breaking, signaling that the \"selling pressure\" from retail/short-term holders is fully absorbed by institutional accumulation.",
+        "The \"Rotation-Override Effect\": Even with strong fundamental AI catalysts, a crash in a major market-cap sector (e.g., Healthcare) can trigger non-discriminatory institutional selling in high-beta tech to maintain portfolio risk parity, causing \"upward\" catalysts to fail on the day of the shock.",
+        "\"Liquidity Trap\" Warning: When a stock is in a confirmed downtrend, positive news releases are often utilized by institutional holders as \"liquidity events\" to exit positions at a higher price (the \"Exit-on-Strength\" phenomenon), resulting in a net-down move despite the bullish nature of the news.",
+        "The \"Competitor CapEx Contagion\": When a primary sector competitor (e.g., Microsoft, Google, AWS) reports a significant CapEx-to-Revenue growth gap, it triggers immediate non-discriminatory selling across the entire cloud/AI software peer group, rendering even positive idiosyncratic product launches ineffective as price support.",
+        "CapEx-Growth Decoupling: Market sensitivity to AI infrastructure spending is non-linear; investors shift from rewarding \"AI scale\" to punishing \"CapEx intensity\" the moment revenue growth shows signs of plateauing, marking a regime shift in valuation multiples."
+    ],
+    "MISSING": [
+        "AI-CapEx Realization Index: Tracks the velocity of infrastructure spending relative to software-revenue conversion.",
+        "Sentiment-Fundamental Divergence: Measures the gap between narrative-driven valuation and underlying operational performance.",
+        "Systemic Risk & Governance Index: Aggregates regulatory, geopolitical, and insider-liquidity pressures on sector valuations.",
+        "Ecosystem Strategic Beta: Quantifies the revenue impact of cloud/partner interdependencies against sector-wide headwinds.",
+        "Macro-Liquidity Sensitivity: Evaluates sector-wide resilience to interest rate cycles and institutional capital distribution shifts.",
+        "Inter-Sector Correlation Coefficient: A real-time metric tracking how non-tech sector shocks (e.g., Healthcare/Financials) correlate with institutional liquidation in the tech sector.",
+        "Institutional Liquidity Velocity: Measures the volume of \"exit-on-strength\" vs. \"accumulation\" during positive news cycles to determine if a catalyst will be a \"trap\" or a \"reversal.\"",
+        "Risk Parity Rebalancing Signal: A daily indicator monitoring if large-cap sector volatility forces forced selling in non-related growth stocks.",
+        "Narrative-to-Price Lag: Quantifies the time delay between a major partnership announcement (e.g., TikTok) and its actual reflection in the stock's support level, accounting for institutional digestion periods.",
+        "CapEx-Efficiency Ratio (CER): A real-time tracker of the dollar-for-dollar revenue return on AI infrastructure investment across the \"Magnificent 7\" and enterprise cloud peers.",
+        "Institutional Sector-Flow Aggregator: A metric that tracks net institutional flows into/out of the Tech sector specifically in response to earnings reports from non-tech market leaders (e.g., Healthcare, Energy), quantifying the \"Rotation-Override\" risk.",
+        "Revenue-Growth Plateau Signaling: A predictive indicator that identifies the inflection point where cloud revenue growth begins to lag behind the velocity of infrastructure CapEx spending, serving as a leading indicator for a \"valuation haircut\" in the software sector."
+    ],
+    "MEMORY_CAP": 0.7474,
+    "MISSING_CAP": 0.5811428571428572
+}

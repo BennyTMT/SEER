@@ -1,0 +1,43 @@
+{
+    "SECTOR": "[Consumer Staples & Big-Box Retail]\nThis sector features essential goods manufacturers, beverage giants, and large-scale retail chains (e.g., WMT, COST, KO, PEP, PG). Known for their defensive market characteristics, these stocks are primarily driven by inflation rates, consumer purchasing power, commodity pricing, and supply chain efficiency.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Staples act as \"Risk-Off\" havens; institutional rotation out of cyclicals is the primary driver for sector outperformance.",
+        "Unit volume growth is the critical health metric; price hikes without volume signal institutional distribution.",
+        "Retailer earnings act as a 1–2 day leading indicator for CPG supplier performance.",
+        "\"Trade-down\" shifts toward discount retail are bearish for premium CPG manufacturers.",
+        "Defensive stocks decouple from market volatility when short interest is low but remain vulnerable to \"growth scares.\"",
+        "Analyst \"Hold\" clusters serve as sentiment anchors, while upgrades in stagnant staples often mask institutional exit.",
+        "Low-liquidity periods (holidays/year-end) cause stocks to tether to index drift and institutional rebalancing over company news.",
+        "A cluster of analyst downgrades at 52-week lows signals institutional exhaustion and an accumulation floor.",
+        "Dividend declarations following 52-week lows act as institutional \"safety signals\" that override short-term sentiment.",
+        "CPI-induced volatility triggers rotation into staples with pricing power as a hedge against currency devaluation.",
+        "Reversals from 52-week lows often exhibit momentum persistence until the 50-day moving average is reclaimed.",
+        "Unsolicited mini-tender offers are liquidity-neutral noise that confirm management's internal valuation floor.",
+        "Geopolitical de-escalation (specifically tariff cancellations) serves as a higher-beta catalyst for large-cap Staples than CPI releases, as it reduces supply-chain risk premiums.",
+        "The \"Dividend Safety Signal\" effect is amplified when announcements occur during periods of intense analyst price-target cutting, serving as an institutional floor.",
+        "Large-cap staples exhibit \"momentum persistence\" following a 52-week low reversal, provided the broader S&P 500 confirms a risk-on rotation.",
+        "Ex-Dividend Date Mechanical Drops in high-conviction \"Bond Proxy\" staples are frequently offset by institutional accumulation within 24 hours, often resulting in a \"Neutral\" or \"Flat\" price action rather than a mechanical decline.",
+        "Post-Earnings Analyst Upgrade Clusters act as a \"Sentiment Buffer\" that effectively negates the short-term impact of negative technical events (like ex-dividend dates) or minor revenue misses in blue-chip staples.",
+        "In inflationary environments, institutional investors prioritize \"Pricing Power\" (margin resilience) over \"Volume Growth,\" causing stocks with flat volume but stable margins to trade sideways or higher despite missing volume expectations.",
+        "\"Consumer Confidence Souring\" (Multi-year lows) acts as a specific catalyst for sell-offs in premium CPG, as it signals a shift from brand loyalty to private-label substitution, disproportionately hurting companies with flat unit volumes.",
+        "Insider Selling by C-suite executives (specifically Form 4 filings) following a 10%+ rally from 52-week lows functions as a \"distribution signal,\" often preceding institutional profit-taking in large-cap staples.",
+        "\"Flight to Safety\" Inversion: During major systemic shocks to growth sectors (e.g., Tech/AI sell-offs), large-cap Staples exhibit \"safe haven\" elasticity that overrides negative company-specific catalysts (insider sales, analyst downgrades, or volume misses).",
+        "Institutional \"Price-Action Resilience\": When the broader market experiences a high-volatility \"Risk-Off\" event, the correlation between P&G and the Dow Jones Industrial Average tightens significantly, causing the stock to decouple from its own negative sentiment-based headlines."
+    ],
+    "MISSING": [
+        "Institutional Yield-Spread Rotation: Real-time tracking of capital flows between staples and risk-free assets based on dividend-spread attractiveness.",
+        "Inflationary Pricing-Power Index: A quantitative score of margin resilience and volume-retention capacity during high-CPI, private-label-competitive environments.",
+        "Institutional Accumulation Velocity: A tracking metric of AUM migration and holding turnover to distinguish between defensive positioning and technical exhaustion.",
+        "Geopolitical Supply-Chain Risk Coefficient: A sensitivity mapping of regional revenue exposure to trade tariffs, bilateral disputes, and localized production shocks.",
+        "Revenue Elasticity Calibration: A comparative metric of preference for price-led versus volume-led revenue growth to forecast sector-wide margin expansion.",
+        "Private-Label Substitution Rate: Real-time tracking of market share loss to generic competitors during periods of declining consumer confidence.",
+        "Executive Trading Pattern Correlation: A tracking database of C-suite Form 4 filings relative to institutional buying/selling volume to identify \"smart money\" distribution.",
+        "Sector Beta-Rotation Sensitivity: A quantified metric measuring the historical speed at which capital exits Staples during S&P 500 \"Risk-On\" rotations into high-growth sectors.",
+        "Growth-to-Value Rotation Velocity: A metric measuring the speed of capital flows from the Nasdaq-100 to the Dow Jones Industrial Average during tech-specific drawdowns (e.g., AI spending fatigue).",
+        "Sentiment Overhang Decay: A quantitative measure of how many trading days are required for \"negative sentiment\" (insider sales/downgrades) to lose its statistical impact on price during a broader market flight-to-safety.",
+        "Defensive Beta Calibration: A dynamic coefficient that adjusts the stock’s sensitivity to sector news vs. market-wide volatility based on the current VIX level."
+    ],
+    "MEMORY_CAP": 0.694,
+    "MISSING_CAP": 0.5322857142857143
+}

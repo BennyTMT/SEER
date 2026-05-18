@@ -1,0 +1,32 @@
+{
+    "SECTOR": "[Financial Services & Payments]\nThis sector comprises major banking institutions and global payment networks (e.g., JPM, BAC, V, MA). These equities are heavily influenced by macroeconomic indicators, central bank interest rate decisions, consumer credit health, transaction volumes, and regulatory policy shifts.",
+    "TARGET": "This memory file serves as a domain knowledge base to retrieve events relevant to stock price trends. By analyzing how past events impacted historical prices, the agent learns structural patterns, filters market noise, and identifies the most critical information needed for accurate future price predictions in this sector.",
+    "MEMORY": [
+        "Banks track yield spreads, while payment networks act as high-beta tech that shifts to financial-beta during regulatory or sector-specific downgrades.",
+        "Regulatory threats trigger reflexive contagion selling, creating a 24-48 hour discount period before fundamental valuation or \"rhetoric exhaustion\" initiates mean reversion.",
+        "Institutional de-risking pre-FOMC and year-end low-liquidity periods consistently override idiosyncratic positives, favoring profit-taking over accumulation.",
+        "Large-cap payment networks with deep moats exhibit a \"valuation floor\" during regulatory panics; significant drops on non-fundamental news invite value-oriented institutional rebounds.",
+        "Payment networks are \"Policy-Sensitive\" during legislative volatility, where negative headlines act as a price ceiling, decoupling the stock from positive macro indicators like retail sales.",
+        "Technical exhaustion (gains >5% in 14 days) and sector-wide \"guilty by association\" selling pressure frequently override technical support and dividend-based valuation anchors.",
+        "Capital returns (buybacks/dividends) and ex-dividend windows provide gravitational anchors that suppress downward volatility during cross-sector rotations.",
+        "New Year institutional re-entry and strategic growth catalysts (e.g., major partnerships) act as primary overrides to technical exhaustion and bearish sentiment cycles.",
+        "Rhetoric Exhaustion Threshold: In high-moat payment networks, repeated regulatory threats (e.g., interest rate caps) lose their impact on price once the stock has corrected by ~8-10% from recent highs, signaling a transition from \"panic selling\" to \"value discovery.\"",
+        "GDP/Macro Divergence: Resilient macro data (GDP, employment) serves as a primary hedge against sector-specific regulatory shocks, often forcing a \"Neutral\" consolidation phase rather than continued liquidation when headline risk is high but economic fundamentals are strong.",
+        "The \"Index-Drag\" Effect: During periods of high legislative uncertainty in the Financials sector, idiosyncratic positive catalysts (upgrades, product launches) are frequently nullified by broader sector volatility or index-heavyweight failures (e.g., UNH, WFC), leading to short-term price consolidation (Neutrality) rather than immediate reversals.",
+        "Institutional Accumulation Lag: While 13F filings and analyst initiations signal long-term value, they rarely act as immediate catalysts for price reversal in the presence of pending regulatory deadlines (e.g., Jan 20th/21st rhetoric), as institutional buyers wait for \"Rhetoric Exhaustion\" to be confirmed by a lack of new, escalatory legislative moves.",
+        "The \"Earnings-Exhaustion\" Paradox: In high-volatility regimes, even \"Beat and Raise\" reports can trigger a sell-off if the stock has experienced significant intra-day volatility or if the earnings release coincides with broad market index-heavyweight failures (e.g., UNH), causing institutional profit-taking to override fundamental valuation improvements.",
+        "Restructuring Discounting: Workforce reduction announcements, while theoretically positive for margins, are often interpreted by the market as a \"defensive\" signal during periods of extreme regulatory uncertainty, leading to short-term pressure rather than an immediate bullish re-rating."
+    ],
+    "MISSING": [
+        "Macro-Transaction Sensitivity: Correlation of labor and GDP data to sector-wide transaction volume growth.",
+        "Systemic Flow Velocity: Capital rotation tracking between banking, fintech, and payment sub-sectors.",
+        "Regulatory Risk-Pricing Delta: Deviation between current valuation and the quantified \"implied revenue hit\" of legislative probability.",
+        "Institutional Positioning Index: Delta between headline-driven sentiment and actual institutional flow to identify structural accumulation or exhaustion.",
+        "Capital Efficiency & AI-Margin Index: Correlation of AI-driven operational expansion against systemic funding costs.",
+        "Systemic Contagion & Beta-Spike Monitor: Sensitivity of sector valuations to non-sector-specific index volatility and cross-industry sympathy selling.",
+        "Earnings Liquidity & Rebalancing Indicator: Analysis of post-earnings institutional volume to distinguish genuine growth from index-driven liquidity shifts.",
+        "Operational Sentiment Divergence: Framework to categorize workforce and cost restructuring as either defensive survival or proactive AI-driven efficiency."
+    ],
+    "MEMORY_CAP": 0.6482,
+    "MISSING_CAP": 0.3057142857142857
+}
