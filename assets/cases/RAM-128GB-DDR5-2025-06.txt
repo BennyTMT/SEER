@@ -1,0 +1,257 @@
+====================================================================================================
+SEER case transcript -- Memory price forecasting, 128GB DDR5, cut-off 2025-06
+====================================================================================================
+Paper reference : Figure 4(a); the trimmed version is printed as Figures 15-16 in the appendix.
+Task            : Memory price forecasting (monthly unit price in USD, 9-month horizon: 2025-07 .. 2026-03)
+Item            : 128GB DDR5
+Cut-off month   : 2025-06
+Context         : 66 retrieved events (Section B) and 6 causal-knowledge rules (Section C).
+                 
+
+This file contains the COMPLETE model input (system prompt + user prompt) and the COMPLETE model
+output (reasoning + <prediction>). The appendix figure keeps only 18 of the 66 events (the ones
+the reasoning cites) and elides the rest with "..."; everything else is identical to this file.
+
+====================================================================================================
+[1] SYSTEM PROMPT
+====================================================================================================
+**Task:**
+You will be provided with a RAM product's recent monthly **unit prices** and a list of news events (or N/A) affecting that part. Your task is to forecast the **exact monthly unit prices** (in USD) for the next 9 consecutive months following the cut-off month.
+
+**Notes:**
+* Prices are observed monthly; each value represents the unit price for that month.
+* The prediction targets are the next 9 specific months listed below; you must emit one price per target month, in chronological order.
+* Prediction Knowledge is the historical forecasting experience; please refer to it when making predictions.
+
+====================================================================================================
+[2] USER PROMPT
+====================================================================================================
+**Target Part:** 128GB-DDR5
+**Cut-off Month:** 2025-06
+**Prediction Horizon:** Next 9 months
+**Target Months (in order):** 2025-07, 2025-08, 2025-09, 2025-10, 2025-11, 2025-12, 2026-01, 2026-02, 2026-03
+
+**A. Historical Monthly Prices (2024-10 to 2025-06)**
+856.42, 861.70, 848.54, 878.19, 894.81, 849.24, 857.66, 894.54, 875.18
+
+**B. Event Intelligence**
+[4] 2024-10-31: Major Cloud Service Providers, including Amazon, Microsoft, and Meta, reported Q3 2024 earnings, announcing unprecedented surges in AI capital expenditures (e.g., Amazon's capex soaring 81% year-over-year to $22.6 billion and Microsoft's reaching $14.9 billion).
+[5] 2024-10-31: Intel reported its Q3 2024 earnings, confirming the volume ramp of its Xeon 6 (Granite Rapids) server processors which exclusively mandate high-bandwidth DDR5 memory to support increased core counts.
+[6] 2024-10-31: Samsung announced plans to expand the sales portion of high-end server products in 2025, explicitly targeting DDR5 modules with 128GB density or higher.
+[19] 2024-11-21: TrendForce projected that global AI server shipments will grow by over 28% in 2025, driven by aggressive infrastructure build-outs by Cloud Service Providers (CSPs).
+[20] 2024-11-26: TrendForce confirmed that Q3 2024 DRAM contract prices rose 8% to 13% QoQ, driven by an acute supply deficit as major suppliers (Samsung, SK hynix, Micron) displaced conventional DRAM production capacity in favor of HBM.
+[21] 2024-11-26: TrendForce reported that Micron achieved a 28.3% QoQ revenue surge to $5.78 billion in Q3 2024, driven by a 13% increase in bit shipments heavily concentrated in high-capacity server DRAM and HBM3e.
+[22] 2024-11-26: TrendForce reported that SK hynix's Q3 2024 bit shipments declined 1% to 3% QoQ despite ramping up HBM3e production, as the company actively starved legacy LPDDR4 and DDR4 sales to prioritize premium nodes.
+[23] 2024-11-26: TrendForce's Q3 2024 DRAM report projected that Q4 2024 contract prices for conventional server DRAM will decline, as the capacity squeeze from HBM production had a weaker-than-anticipated pricing impact and new capacity from Chinese suppliers prompted aggressive inventory depletion.
+[24] 2024-11-27: Major memory supplier SK Hynix announced its 2025-2027 'Value Up' plan, explicitly committing to strict capital expenditure (capex) discipline to maintain optimal investment levels rather than aggressively expanding chip production.
+[43] 2024-12-30: TrendForce finalized its late December market survey, reporting that memory manufacturers had shifted substantial DDR4 and some HBM production capacity toward DDR5, and consequently projected a 5-10% decline in server DRAM contract prices for Q1 2025.
+[45] 2024-12-30: TrendForce published its 1Q25 quantitative capacity allocation data, revealing that DRAM manufacturers shifted substantial legacy DDR4 wafer starts to DDR5 and redirected a portion of HBM production capacity back to DDR5, resulting in Q1 server DRAM contract prices dropping by 5-10% QoQ.
+[53] 2025-01-14: Samsung Electronics released its 2025 capital expenditure strategy, explicitly reducing short-term conventional DRAM production investments in favor of DRAM 1b/1c process migrations and HBM infrastructure.
+[61] 2025-01-23: SK Hynix reported a record Q4 2024 operating profit of 8.08 trillion won, explicitly stating that High Bandwidth Memory (HBM) now accounts for over 40% of its total DRAM revenue, and announced accelerated plans to expand HBM3E production.
+[62] 2025-01-24: TrendForce verified intra-quarter settled-tier prints showing that major DRAM suppliers and OEMs finalized 1Q25 module contracts in mid-January, officially locking in MoM transaction price declines of 8-13% for standard modules.
+[63] 2025-01-24: TrendForce reported that some DRAM suppliers and PC OEMs finalized 1Q25 DRAM module contracts in the second half of January, with prices showing month-over-month declines of 8-13%.
+[66] 2025-01-29: Supply chain intelligence firm Fusion Worldwide reported that enterprise demand for 128GB DDR5 modules significantly outpaced lower-capacity options due to aggressive AI server requirements.
+[67] 2025-01-29: Supply chain monitor Fusion Worldwide reported in its January Greensheet that enterprise demand for high-capacity 96GB and 128GB DDR5 modules was significantly outpacing lower-capacity options, even as broader DDR5 spot prices were expected to fall 5-8%.
+[68] 2025-01-29: Fusion Worldwide published its January 2025 Greensheet, explicitly reporting that demand for 96GB and 128GB DDR5 modules was significantly outpacing lower-capacity options, even as broader DDR5 spot pricing was expected to temporarily fall 5-8% post-Lunar New Year.
+[70] 2025-01-31: During its Q4 2024 earnings call, Samsung Electronics reported record Memory Business revenue driven by high-density server DDR5 and HBM, confirming it is aggressively expanding capacity for advanced products like HBM.
+[71] 2025-01-31: During its Q4 2024 earnings call, Samsung Electronics explicitly announced it is accelerating its transition to the 1b nanometer (nm) process to increase the share of DDR5 shipments.
+[72] 2025-02-03: Gartner projected that High-Bandwidth Memory (HBM) revenue will surge 66.3% in 2025 to $19.8 billion, representing an increasing 19.2% share of total DRAM revenue.
+[73] 2025-02-03: Gartner released a market report projecting High-Bandwidth Memory (HBM) to account for 19.2% of total DRAM revenue in 2025, a significant increase from 13.6% in 2024.
+[74] 2025-02-03: Gartner VP Analyst George Brocklehurst published a semiconductor revenue report projecting that High-Bandwidth Memory (HBM) will account for 19.2% of global DRAM revenue in 2025, up significantly from 13.6% in 2024.
+[79] 2025-02-18: DigiTimes reported that major DRAM manufacturers, including Micron, Samsung, and SK Hynix, plan to cease DDR3 and DDR4 memory production by the end of 2025 to focus exclusively on more profitable DDR5 and HBM architectures due to price dumping by Chinese makers.
+[81] 2025-02-18: DigiTimes reported that major DRAM manufacturers Samsung, SK Hynix, and Micron will cease production of DDR3 and DDR4 by the end of 2025 to shift their focus and wafer capacity entirely toward DDR5 and HBM memory.
+[82] 2025-02-19: At the Semicon Korea 2025 event, Gartner VP Gaurav Gupta forecasted that DRAM memory prices would experience a temporary decline or stagnation in the first quarter of 2025 before recovering in the second half of the year.
+[93] 2025-02-27: SK Hynix achieved a 70% yield in 12-layer HBM4 testing using its 1b DRAM node, accelerating its timeline to commence full-scale supply to NVIDIA by Q3 2025.
+[94] 2025-02-27: TrendForce reported that SK hynix's 4Q24 DRAM revenue grew 16.9% QoQ to USD 10.46 billion, driven by ramped-up HBM3e shipments, while Samsung's bit shipments dropped due to shrinking DDR4 and LPDDR4 demand.
+[95] 2025-02-27: TrendForce reported that global DRAM industry revenue grew 9.9% QoQ to USD 28 billion in 4Q24, but projected that conventional DRAM and combined DRAM/HBM contract prices will decline in 1Q25 due to weakening Cloud Service Provider (CSP) demand.
+[97] 2025-03-18: SK Hynix delivered the industry's first 12-layer HBM4 samples to major customers and confirmed the expansion of its advanced DRAM packaging and HBM-related capacity in South Korea.
+[98] 2025-03-18: NVIDIA generated a massive surge in High Bandwidth Memory (HBM) demand to support the production of its next-generation B200 and B300 series AI accelerators.
+[103] 2025-03-20: During its Q2 FY2025 earnings call, Micron Technology reported a 47% year-over-year increase in DRAM revenue and explicitly stated that its High Bandwidth Memory (HBM) ramp is 'constraining non-HBM DRAM supply'.
+[105] 2025-03-25: Micron Technology issued a formal letter to its customers confirming a 10% to 15% price increase across its memory products, citing supply constraints from a January power outage at its Singapore facility and fully booked HBM capacity for 2025.
+[108] 2025-03-25: Market intelligence firm TrendForce published a report forecasting a 0% to 5% quarter-over-quarter decline in conventional DRAM contract prices for Q2 2025.
+[112] 2025-04-07: South Korean media and TrendForce reported that Samsung Electronics initiated Q2 2025 contract negotiations aiming for a 3% to 5% DRAM price raise, as U.S. reciprocal tariff announcements drove hyperscalers to aggressively frontload server memory orders.
+[122] 2025-04-21: Chinese memory manufacturer ChangXin Memory Technologies (CXMT) doubled its DRAM production to 200,000 wafers per month and officially expanded its output into mainstream DDR5 memory.
+[123] 2025-04-22: Samsung issued a formal notice to cease its mainstream production of legacy DDR4 memory, retaining supply only for automotive and industrial customers to shift wafer capacity toward DDR5 and High Bandwidth Memory (HBM).
+[124] 2025-04-22: Samsung officially ceased taking new orders for legacy DDR4 memory modules, establishing a hard End-of-Life (EOL) timeline with final deliveries to be completed by December 2025.
+[129] 2025-04-30: TrendForce published a memory spot price trend report confirming that Samsung, SK hynix, and Micron announced the impending end of production for DDR3 and DDR4, which drove the average spot price of mainstream DDR4 1Gx8 3200MT/s up by 4.88% week-over-week to US$1.804.
+[131] 2025-05-02: Electronic component distributor Edge Electronics issued a market advisory stating that memory manufacturers are actively shifting production priorities away from legacy DDR4, forecasting significant supply constraints later in 2025.
+[132] 2025-05-05: Supply chain sources reported that SK Hynix increased consumer DRAM chip prices by 12% and outlined plans to raise DDR5 DRAM prices by 15% to 20%.
+[137] 2025-05-20: Commercial Times reported that the top five NAND manufacturers, including Samsung, SK hynix, and Micron, implemented production cuts of 10% to 15% in the first half of 2025, fueling a sharper-than-expected Q2 price rebound.
+[139] 2025-05-21: TrendForce published a Spotlight Report stating that major suppliers like Micron, Samsung, and SK hynix announced end-of-life (EOL) plans for DDR4 with final shipments in early 2026, driving DDR4 contract prices up by over 20% in Q2 with an expected 10% rise in Q3.
+[141] 2025-05-22: TrendForce reported that Samsung is aggressively expanding its 6th-generation 10nm-class (1c) DRAM production at its Pyeongtaek and Hwaseong fabs, targeting up to 40,000 wafers monthly and converting legacy 1z lines to 1c production.
+[142] 2025-05-23: At Dell Technologies World 2025, SK hynix unveiled its next-generation server memory lineup, showcasing the industry's first DDR5 RDIMM and MRDIMM products built on the 1c node, including ultra-high-capacity 256GB 3DS DDR5 RDIMMs.
+[144] 2025-05-27: Supply chain reports indicated that Chinese memory manufacturer CXMT abruptly pivoted its wafer output away from legacy DDR4 toward newer products, removing a significant chunk of cheap DDR4 supply from the market and triggering a sharp undersupply panic.
+[146] 2025-05-27: DigiTimes reported that the Chinese government instructed domestic memory makers, such as CXMT and Fujian Jinhua, to halt production of low-priced DDR4, abruptly ending a period of global market oversupply.
+[147] 2025-05-27: ChangXin Memory Technologies (CXMT) announced it is ending legacy DDR4 production to pivot its manufacturing capacity toward DDR5, reportedly at the behest of the Chinese government.
+[148] 2025-05-27: Industry analysts reported that ChangXin Memory Technologies (CXMT) executed a government-directed dramatic production shift away from legacy DDR4 and aggressively scaled its DDR5 manufacturing capacity.
+[149] 2025-05-27: Industry analysts reported that Chinese memory manufacturer CXMT aggressively shifted its manufacturing capacity away from DDR4 to DDR5 following government directives, causing a surge in domestic DDR5 output.
+[154] 2025-06-03: TrendForce reported that Samsung's redesign of its HBM3e products eased HBM production squeezes, which prompted downstream players to clear inventories and extended conventional DRAM price declines seen since 4Q24.
+[155] 2025-06-05: TrendForce reported that major DRAM suppliers, including Samsung, SK hynix, and Micron, are aggressively scaling back DDR4 production and issuing End-of-Life (EOL) plans to shift manufacturing capacity toward higher-margin DDR5 and HBM.
+[156] 2025-06-05: TrendForce forecasted a rebound in Q2 2025 DRAM contract prices, driven by Cloud Service Providers (CSPs) and PC OEMs accelerating their memory procurement ahead of the July 9 expiration of U.S. reciprocal tariff exemptions.
+[158] 2025-06-13: Major DRAM manufacturers Samsung and Micron formally issued End-of-Life (EOL) notices to customers, with Samsung halting new DDR4 orders in early June 2025 to reallocate fab capacity toward higher-margin DDR5 and HBM.
+[159] 2025-06-13: Samsung and Micron issued End-of-Life (EOL) notices for legacy DDR4 memory, officially halting new orders in June 2025.
+[160] 2025-06-13: Micron Technology Executive VP Sumit Sadana officially confirmed the issuance of End-of-Life (EOL) notices for DDR4 memory to data center and PC customers, with shipments scheduled to taper off and end within 6 to 9 months.
+[161] 2025-06-13: Micron Technology officially announced the discontinuation of its DDR4 memory production, tapering shipments over 6 to 9 months and advising enterprise customers to transition to DDR5.
+[162] 2025-06-13: Micron Technology issued official End-of-Life (EOL) discontinuation notices for legacy DDR4 memory to its data center and PC clients to accelerate the industry transition to DDR5.
+[163] 2025-06-13: Micron Technology issued end-of-life notices to customers for mainstream DDR4 products, announcing that its leading-edge 1-beta and 1-gamma nodes will be exclusively dedicated to producing DDR5, LPDDR5, and HBM.
+[165] 2025-06-19: Yole Group published a market report projecting the global memory market to reach $200 billion in 2025, noting that major suppliers like Samsung, SK Hynix, and Micron are aggressively shifting wafer capacity to High-Bandwidth Memory (HBM) to meet AI infrastructure needs.
+[166] 2025-06-19: Kingston Technology officially launched new high-density DDR5 memory modules built on 32Gbit DRAM chips, enabling single-stick capacities up to 64GB and 128GB kits for enterprise and workstation users.
+[167] 2025-06-20: Counterpoint Research projected that China's ChangXin Memory Technologies (CXMT) will increase its DRAM production volume by 50% year-over-year, driving its DDR5 market share from less than 1% in Q1 2025 to 7% by the end of the year.
+[171] 2025-06-25: Micron Technology reported record Q3 FY2025 revenue of $9.30 billion, officially announcing that its data center memory revenue more than doubled year-over-year alongside a 50% sequential growth in High Bandwidth Memory (HBM).
+[172] 2025-06-25: Research firm Gartner released a market forecast projecting global DRAM revenue to grow 24% in 2025, specifically driven by a 7% increase in Average Selling Prices (ASPs) fueled by AI demand and tariff uncertainty.
+[173] 2025-06-25: Supply chain tracker Fusion Worldwide reported in its June 2025 Greensheet that contract prices for high-capacity DDR5 96GB and 128GB RDIMMs were estimated to rise by 15% QoQ as hyperscalers moved to lock in supply.
+[174] 2025-06-25: Micron Technology reported record fiscal Q3 2025 revenue of $9.30 billion, driven by a 51% year-over-year surge in DRAM revenue and a $6 billion revenue run-rate for its high-bandwidth memory (HBM) portfolio.
+
+**C. Prediction Knowledge**
+1. **Regime Classification & Foundational Drivers**
+Before forecasting any SKU, explicitly classify the regime (Squeeze vs. Glut) using a 4-point checklist to avoid catastrophic sign errors:
+1. Is supply expanding (rising utilization/wafer output) or contracting?
+2. Are downstream buyers accepting quoted price hikes or resisting/threatening non-purchase?
+3. Is supplier guidance narrowing (loosening) or widening (tightening)?
+4. Is the specific SKU trailing-edge (glut-prone) or leading-edge?
+*Verdict:* If supply is contracting and buyers are accepting hikes (or "sold out" announcements occur), it is an UPSIDE squeeze. If supply is expanding and buyers resist, it is a DOWNSIDE cycle top.
+*Corollaries:*
+- CEO/manufacturer forward pricing language ("prices rising throughout the year") strongly overrides single-quarter analyst guidance.
+- In a structural supply-deficit, price is set at the margin by supply scarcity; weak conventional demand does NOT cap prices.
+- Spot market weakness (e.g., spot DDR4 drifting down) is transient retail noise; ignore it completely when forecasting CONTRACT SKUs.
+§
+2. **Execution Hierarchy & Math Discipline**
+Forecast error is dominated by a strict precision hierarchy: (1) Correct regime sign, (2) Correct base selection, (3) Correct step timing (Q-boundary placement), and (4) Multiplier magnitude.
+- *Target Math:* Compute the target strictly as: `Target = Correct_Base × Precedent_Multiplier`.
+- *Rounding Discipline:* Carry one extra significant figure through the multiplication (e.g., Base × 1.780) before rounding the final target to two decimals. This shaves residual basis points and ensures cent-exact accuracy.
+- *Error Propagation:* Base errors propagate multiplicatively. Base-inflation compounds magnitude misses: overshooting the pre-boundary base while simultaneously under-applying the boundary multiplier produces a catastrophic "double miss." Always anchor the structural leg to the correct SETTLED base.
+- *Commitment:* Once the base, timing, and sign are locked, apply the SKU-specific realized multiplier with complete commitment. Do not artificially hedge, second-guess, or fine-tune to chase sub-0.3% precision.
+§
+3. **Base Calibration & Handling Guidance**
+- *Settled Base:* If historical prints show the current quarter settled, carry that exact value forward flat to two decimals. Do NOT inflate it mid-quarter.
+- *Synthesized Base from Guidance:* 
+  - *Modest Guidance (e.g., 3-8%):* Settlements tend to clear near the arithmetic MIDPOINT.
+  - *Demand Caveat:* If suppliers/analysts explicitly note demand "did not materialize as anticipated" or guidance was "narrowed," the settlement clears in the LOWER HALF of the range (e.g., ~4%), NOT the absolute minimum (~3%). Only push to the true floor when demand language is unambiguously weak AND supply is loosening.
+- *Aggregate vs. SKU:* Do NOT convert an industry-aggregate contract-price % (e.g., TrendForce "13-18% Q2 DRAM increase") into a per-SKU price step. Aggregate figures blend many parts; the SKU's OWN historical prints already encode its settled move. Fabricating an intra-quarter lift to reconcile a SKU print with an aggregate headline is a critical failure mode.
+§
+4. **Structural Multipliers & Wafer Cannibalization**
+Wafer reallocation to premium products creates violent, discontinuous price spikes. HBM consumes leading-edge wafers at a 3:1 bit ratio, starving both leading-edge and trailing-edge SKUs. Trailing-edge starvation often produces equal or greater price explosions due to severe capacity cuts and inelastic demand.
+*First Full Structural Leg Multipliers:* Match the target SKU on node, capacity, and form-factor.
+- Leading-edge DDR5 Server RDIMM: ~1.78x (Realized exactly 1.780x. Do not use the older ~1.807x ladder value for this SKU).
+- Trailing-edge DDR4 32GB Module: ~1.845x
+- Scarcest Trailing-edge DDR4 64GB RDIMM: ~1.880x
+*Shock Amplification:* When a structural step is driven by a one-time physical shock (earthquake, fab outage) combined with a >20-25% manufacturer hike notice, the realized settlement (e.g., >78% jump) far EXCEEDS the nominal hike-notice %. The hike notice acts as a floor, and the physical shock amplifies it.
+§
+5. **Shape, Timing, and Plateau Discipline (Step-Then-Plateau)**
+Contract-priced RAM SKUs move in discontinuous steps. The default shape is a flat base, ONE large discrete step, and then perfectly FLAT again.
+- *Current Quarter Hold:* Hold the CURRENT quarter perfectly flat at the settled print. Even if your reasoning trace explicitly identifies an accelerating deficit ramping into the next quarter, acceleration expresses itself at the NEXT Q-boundary, not by retroactively inflating the already-settled current quarter.
+- *Timing the Step:* Place the full structural step exactly at the FIRST month of the NEXT quarter (Q-boundary). The ABSENCE of published next-quarter analyst guidance is NEVER a valid reason to hold flat into an identified accelerating deficit. Structural squeezes reprice on physical scarcity, not on whether analysts have quantified a number.
+- *Plateau Discipline:* Once a contract reprices, it holds perfectly flat. Never sprinkle small monthly gains ("marginal firmness") onto a plateau, never apply a reflexive decay tick, and ignore sub-0.2% micro-wobble within a settled quarter. One-time discrete physical shocks (earthquakes) ALWAYS produce a single step followed immediately by a flat plateau.
+§
+6. **Multi-Leg Squeezes & Leg-Counting Discipline**
+Structural squeezes can arrive as multiple sequential legs, but you must strictly categorize prior steps to assign the correct multiplier.
+- *Leg-Counting:* Modest single-digit intra-quarter steps (+3-8%) do NOT count as "structural legs." If the prior quarter merely settled at a mild step, the next Q-boundary jump is a FIRST full structural leg and clears at the ~1.78x - 1.88x floor (See Knowledge 4).
+- *Second Leg Multiplier:* If the base already contains a violent structural spike (~1.8x), the NEXT structural leg at a later Q-boundary clears at the upper edge of the secondary band: ~1.43x.
+- *Within-Quarter Staircase (Rare Exception):* Default shape is always Step-Then-Plateau. A high accelerant count of long-horizon narrative items (new fab CapEx, "sold out through 2025," GPU roadmaps) supports the FIRST leg and the plateau level—they do NOT generate fresh monthly steps. ONLY real-time worsening of a deficit within the quarter (rising HBM capacity share prints, sequential real-time hike notices) justifies a second within-quarter leg (~1.18x month-over-month). When uncertain, strongly prefer the plateau; over-forecasting multiple legs based on narrative backdrop is a primary failure mode.
+
+**TASK:**
+Predict the **exact monthly unit prices** (USD, floats) for these target months IN ORDER: 2025-07, 2025-08, 2025-09, 2025-10, 2025-11, 2025-12, 2026-01, 2026-02, 2026-03.
+
+**STRICT CONSTRAINTS:**
+1. **COMPREHENSIVE ANALYSIS:** Provide an in-depth Analysis of event-driven price impacts before emitting numbers.
+2. **FORMAT:** Inside `<prediction>` tags, output EXACTLY 9 numeric values separated by commas, in chronological order matching the target months. Just the comma-separated floats.
+3. **WRAPPER:** You MUST wrap the comma-separated prices inside `<prediction>` tags.
+
+**Output:**
+[COMPREHENSIVE Analysis]
+<prediction>price_1, price_2, price_3, price_4</prediction>
+
+====================================================================================================
+[3] SEER OUTPUT  (reasoning + <prediction>)
+====================================================================================================
+# COMPREHENSIVE ANALYSIS
+
+## Step 1: Regime Classification (4-Point Checklist)
+
+1. **Supply expanding or contracting?** CONTRACTING sharply. Samsung, SK Hynix, and Micron are all aggressively reallocating wafer capacity to HBM and DDR5, ceasing DDR4 production, and issuing EOL notices. HBM consumes leading-edge wafers at 3:1 bit ratio, starving conventional DDR5 supply. CXMT also pivoted away from cheap supply.
+
+2. **Buyers accepting hikes or resisting?** ACCEPTING. Hyperscalers/CSPs are aggressively frontloading orders ahead of the July 9 tariff exemption expiration [156]. Fusion Worldwide [173] reports 128GB DDR5 RDIMM contract prices estimated to rise 15% QoQ as hyperscalers "lock in supply." Enterprise demand for 128GB modules is significantly outpacing lower-capacity options [66-68].
+
+3. **Supplier guidance narrowing or widening?** Manufacturer forward pricing language is bullish: Micron 10-15% hike, SK Hynix 15-20% DDR5 hikes [132], TrendForce Q2 rebound forecast, Gartner projecting DRAM ASP +7% for 2025 driven by AI demand.
+
+4. **SKU trailing-edge or leading-edge?** 128GB-DDR5 is LEADING-EDGE, high-density server RDIMM — precisely the SKU benefiting from AI server capex surges and 128GB-specific demand outperformance.
+
+**VERDICT: UPSIDE SQUEEZE.** Supply contracting + buyers accepting hikes + bullish guidance + leading-edge premium SKU. This is a structural supply-deficit environment.
+
+## Step 2: Base Calibration
+
+Historical prices (2024-10 to 2025-06):
+856.42, 861.70, 848.54, 878.19, 894.81, 849.24, 857.66, 894.54, 875.18
+
+The Q2 2025 prints are: Apr=857.66, May=894.54, Jun=875.18. The prices have been oscillating in a range ~850-895 with NO clear structural step yet — this is essentially a settled/flat regime that has NOT yet experienced the violent structural repricing. The June settled print is **875.18**.
+
+Notably, unlike DDR4 which already exploded +20% in Q2, this 128GB DDR5 SKU has NOT yet shown its first full structural leg. The prices have merely wobbled in a band. Per Knowledge 6 (Leg-Counting): these modest oscillations do NOT count as structural legs. Therefore the next Q-boundary (Q3 = July) jump is a **FIRST full structural leg**.
+
+## Step 3: Base Selection & Timing
+
+- **Current quarter (Q2, through June):** Already settled. June = 875.18. But July begins Q3 — the first month of the NEXT quarter (Q-boundary). 
+- Per Knowledge 5: place the full structural step at the FIRST month of the next quarter → **July 2025**.
+
+The correct SETTLED base to anchor from is the Q2 settled print. Given the oscillation, I use the most recent settled June print **875.18** as the structural leg base.
+
+## Step 4: Multiplier Selection
+
+Per Knowledge 4: **Leading-edge DDR5 Server RDIMM: ~1.78x** (realized exactly 1.780x). This is the correct SKU match: leading-edge, high-capacity DDR5 server RDIMM.
+
+**First Full Structural Leg:**
+Target (July) = 875.18 × 1.780 = **1,557.82**
+
+## Step 5: Shape, Timing, and Plateau Discipline
+
+Per Knowledge 5 (Step-Then-Plateau): after the July structural step, the contract holds perfectly FLAT. 
+
+- July: full structural leg → 1557.82
+- Aug–Sep: PLATEAU flat at 1557.82 (Q3 holds)
+
+## Step 6: Second Leg Assessment (Q4 boundary = October)
+
+Per Knowledge 6: once the base contains a violent ~1.8x spike, the NEXT structural leg at a later Q-boundary clears at ~1.43x. 
+
+Do accelerants support a Q4 second leg? Evidence: Continued HBM wafer cannibalization, DDR4 EOL final shipments early 2026 pushing more demand to DDR5, CXMT ramping DDR5 (adds some supply but small share ~7%), sustained AI capex. The structural deficit persists strongly into H2 2025. TrendForce/Gartner project H2 recovery and continued ASP growth. This supports a **second structural leg at the Q4 boundary (October)**.
+
+Second leg (October) = 1557.82 × 1.43 = **2,227.68**
+
+However, I must apply commitment but avoid over-forecasting multiple legs (Knowledge 6 primary failure mode). One second leg at Q4 is justified by the persistent physical deficit. Then plateau.
+
+- Oct: second structural leg → 2227.68
+- Nov–Dec: PLATEAU flat at 2227.68 (Q4 holds)
+
+## Step 7: Q1 2026 boundary (January)
+
+By Q1 2026, DDR4 EOL final shipments occur, CXMT DDR5 share reaches 7%, adding some supply. Guidance beyond is less certain. Per Knowledge 5/6, avoid stacking excessive legs on narrative alone. I hold the plateau flat into Q1 2026 — the deficit remains but new capacity (CXMT, 1c ramps) begins to moderate further violent legs. Prefer plateau when uncertain.
+
+- Jan–Mar 2026: PLATEAU flat at 2227.68
+
+## Final Forecast
+
+- 2025-07: 1557.82 (first structural leg, ×1.78)
+- 2025-08: 1557.82 (plateau)
+- 2025-09: 1557.82 (plateau)
+- 2025-10: 2227.68 (second structural leg, ×1.43)
+- 2025-11: 2227.68 (plateau)
+- 2025-12: 2227.68 (plateau)
+- 2026-01: 2227.68 (plateau)
+- 2026-02: 2227.68 (plateau)
+- 2026-03: 2227.68 (plateau)
+
+<prediction>1557.82, 1557.82, 1557.82, 2227.68, 2227.68, 2227.68, 2227.68, 2227.68, 2227.68</prediction>
+
+====================================================================================================
+[4] FORECAST vs REALISED PRICE  (reference only; not shown to the model)
+====================================================================================================
+month        SEER        realised
+----------------------------------
+2025-07        1557.82      838.16
+2025-08        1557.82      818.36
+2025-09        1557.82      796.86
+2025-10        2227.68      793.22
+2025-11        2227.68     1031.19
+2025-12        2227.68     1188.79
+2026-01        2227.68     1404.54
+2026-02        2227.68     1841.25
+2026-03        2227.68     2745.81

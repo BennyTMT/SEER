@@ -1,0 +1,76 @@
+cff-version: 1.2.0
+message: "If you use SEER in your research, please cite the paper below."
+title: "SEER: Self-Evolving Event Reasoning and Retrieval for Time Series Forecasting"
+abstract: >-
+  SEER is a closed-loop framework that dynamically optimizes event conditioning for time series
+  forecasting. It translates prediction errors into two decoupled feedback mechanisms: a reflective
+  retrieval memory that refines subsequent search queries and filters spurious noise, and a
+  persistent causal knowledge base that distills transferable domain dynamics. SEER enforces strict
+  chronological boundaries across event retrieval and reflection, preventing look-ahead bias and
+  data leakage, and consistently outperforms time series foundation models and language model
+  baselines across six volatile benchmarks.
+type: software
+repository-code: "https://github.com/BennyTMT/SEER"
+date-released: 2026-10-04
+keywords:
+  - time series forecasting
+  - event retrieval
+  - self-evolving agents
+  - LLM agents
+  - causal knowledge
+  - retrieval-augmented generation
+authors:
+  - family-names: Tan
+    given-names: Mingtian
+    affiliation: "Google Cloud AI Research; University of Virginia"
+    email: wtd3gz@virginia.edu
+  - family-names: Goyal
+    given-names: Palash
+    affiliation: Google Cloud AI Research
+    email: palashgoyal@google.com
+  - family-names: Parmar
+    given-names: Mihir
+    affiliation: Google Cloud AI Research
+    email: mihirparmar@google.com
+  - family-names: Das
+    given-names: Sarkar Snigdha Sarathi
+    affiliation: Google Cloud AI Research
+  - family-names: Li
+    given-names: Chun-Liang
+    affiliation: Google Cloud AI Research
+  - family-names: Peng
+    given-names: Nanyun
+    affiliation: Google Cloud AI Research
+  - family-names: Hartvigsen
+    given-names: Thomas
+    affiliation: University of Virginia
+  - family-names: Yoon
+    given-names: Jinsung
+    affiliation: Google Cloud AI Research
+  - family-names: Pfister
+    given-names: Tomas
+    affiliation: Google Cloud AI Research
+preferred-citation:
+  type: article
+  title: "SEER: Self-Evolving Event Reasoning and Retrieval for Time Series Forecasting"
+  year: 2026
+  journal: "arXiv preprint"
+  authors:
+    - family-names: Tan
+      given-names: Mingtian
+    - family-names: Goyal
+      given-names: Palash
+    - family-names: Parmar
+      given-names: Mihir
+    - family-names: Das
+      given-names: Sarkar Snigdha Sarathi
+    - family-names: Li
+      given-names: Chun-Liang
+    - family-names: Peng
+      given-names: Nanyun
+    - family-names: Hartvigsen
+      given-names: Thomas
+    - family-names: Yoon
+      given-names: Jinsung
+    - family-names: Pfister
+      given-names: Tomas
