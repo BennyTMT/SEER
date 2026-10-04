@@ -11,7 +11,11 @@
 
 # SEER: Self-Evolving Event Reasoning<br>and Retrieval for Time Series Forecasting
 
-*Turn forecast errors into better events and causal knowledge.*
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tagline-dark.svg">
+  <img width="760" src="assets/tagline-light.svg"
+       alt="To master the future, an agent must reflect on the history. Prediction errors are the seeds of its causal knowledge and event awareness.">
+</picture>
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](paper/SEER.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](https://github.com/BennyTMT/SEER)
