@@ -14,7 +14,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/tagline-dark.svg">
   <img width="760" src="assets/tagline-light.svg"
-       alt="To master the future, an agent must reflect on the history. Prediction errors are the seeds of its causal knowledge and event awareness.">
+       alt="To See the Future, an Agent must Reflect on History.">
 </picture>
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](paper/SEER.pdf)
