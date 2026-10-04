@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="assets/logos/google.svg" alt="Google" height="26" align="middle">
+  <img src="assets/logos/google.svg" alt="Google" height="32" align="middle">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/logos/uva-dark.svg">
