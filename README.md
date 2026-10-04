@@ -17,9 +17,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](https://github.com/BennyTMT/SEER)
 [![Case studies](https://img.shields.io/badge/Case%20studies-full%20transcripts-1a73e8.svg)](assets/cases/)
 
-Mingtian Tan<sup>1,2✉</sup>,
-Palash Goyal<sup>1✉</sup>,
-Mihir Parmar<sup>1✉</sup>,
+Mingtian Tan<sup>1,2</sup>,
+Palash Goyal<sup>1</sup>,
+Mihir Parmar<sup>1</sup>,
 Sarkar Snigdha Sarathi Das<sup>1</sup>,
 Chun-Liang Li<sup>1</sup>,
 Nanyun Peng<sup>1</sup>,
@@ -29,8 +29,6 @@ Tomas Pfister<sup>1</sup>
 
 <sup>1</sup>Google Cloud AI Research &nbsp;·&nbsp;
 <sup>2</sup>University of Virginia
-
-<sup>✉</sup> Corresponding authors
 
 </div>
 
